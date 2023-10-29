@@ -17,9 +17,9 @@ title: Home
 
 <div style="text-align:center;" markdown>
 
-[![Release](https://img.shields.io/github/v/release/ast3risk-ops/prebook?sort=semver&style=flat-square&cacheSeconds=3600)](https://github.com/ast3risk-ops/prebook/releases/latest)
-[![License](https://img.shields.io/github/license/ast3risk-ops/prebook?style=flat-square&cacheSeconds=86400)](https://github.com/ast3risk-ops/prebook/blob/main/LICENSE)
-![GitHub Repo stars](https://img.shields.io/github/stars/ast3risk-ops/prebook?style=flat-square&cacheSeconds=86400)
+[![Release](https://img.shields.io/github/v/release/pre-book/prebook?sort=semver&style=flat-square&cacheSeconds=3600)](https://github.com/pre-book/prebook/releases/latest)
+[![License](https://img.shields.io/github/license/pre-book/prebook?style=flat-square&cacheSeconds=86400)](https://github.com/pre-book/prebook/blob/main/LICENSE)
+![GitHub Repo stars](https://img.shields.io/github/stars/pre-book/prebook?style=flat-square&cacheSeconds=86400)
 
 </div>
 
@@ -37,7 +37,7 @@ title: Home
 
 ## Contributors
 
-<a href="https://github.com/ast3risk-ops/prebook/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ast3risk-ops/prebook" />
+<a href="https://github.com/pre-book/prebook/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=pre-book/prebook" />
 </a>
 

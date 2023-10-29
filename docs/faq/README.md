@@ -22,7 +22,7 @@ description: FAQ to answer common questions.
     Windows 10 and 11 Pro and Home (Pro strongly recommended, Home support is patchy at best).
 ??? question "Where can I get it?"
 
-    You can download the latest builds from [GitHub Releases](https://github.com/Ast3risk-ops/PreBook/releases/latest).
+    You can download the latest builds from [GitHub Releases](https://github.com/pre-book/prebook/releases/latest).
 ??? question "Who made this?"
 
     [Asterisk](https://asterisk.shinken.studio "Asterisk's website") and [conaN](https://discord.com/users/779674532481990656 "conaN's Discord Profile").
