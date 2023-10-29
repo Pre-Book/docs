@@ -63,9 +63,9 @@ nav:
       - Setup: setup/README.md
 
 
-repo_url: https://github.com/Ast3risk-ops/PreBook
-repo_name: "Ast3risk-ops/PreBook"
-edit_uri: edit/main/docs/docs/
+repo_url: https://github.com/pre-book/docs
+repo_name: "Pre-Book/docs"
+edit_uri: edit/main/docs/
 site_url: https://prebook.pages.dev
 markdown_extensions:
   - abbr
