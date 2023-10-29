@@ -1,5 +1,6 @@
 site_name: PreBook Documentation
 theme:
+  custom_dir: overrides
   logo: assets/PB.png
   favicon: assets/PB.png
   name: material
@@ -64,6 +65,10 @@ nav:
       - Removed Features: faq/features.md
   - Setup:
       - Setup: setup/README.md
+      - Playbooks:
+          - AtlasOS: setup/playbooks/atlas.md
+          - ReviOS: setup/playbooks/revi.md
+          - Stock: setup/playbooks/stock.md   
 
 
 repo_url: https://github.com/pre-book/docs
