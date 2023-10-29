@@ -18,4 +18,4 @@
 *[VBS]: Virtualization Based Security
 *[VRR]: Variable refresh rate
 *[WSL]: Windows Subsystem for Linux
-*[NTLite]: Tool for modifying WIM images and Windows editions inside install media.
+*[NTLite]: Tool for modifying WIM images and Windows editions inside install media
