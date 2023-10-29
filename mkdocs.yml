@@ -50,7 +50,9 @@ extra:
   generator: false
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/ast3risk-ops
+      link: https://github.com/pre-book
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/Qf3PJKhAFg
 extra_css:
   - stylesheets/extra.css
 
