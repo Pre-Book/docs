@@ -16,7 +16,7 @@ description: How to use PreBook.
     This playbook leaves Windows in a very insecure (and potentially broken) state. 
     We highly recommend against using it.
     
-    We do use the AME Wizard, but AME's own playbook for it should be avoided.
+    These playbooks use the AME Wizard, but AME's own playbook for it should be avoided.
 
 [:atlas-atlas: AtlasOS](playbooks/atlas.md){ .md-button } [:revi-revi: ReviOS](playbooks/revi.md){ .md-button } [:material-microsoft-windows:{ .windows } None (stock)](playbooks/stock.md){ .md-button }
 
