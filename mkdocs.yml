@@ -83,6 +83,10 @@ repo_url: https://github.com/pre-book/docs
 repo_name: "Pre-Book/docs"
 edit_uri: edit/main/docs/
 site_url: https://prebook.pages.dev
+
+watch: 
+  - includes
+
 markdown_extensions:
   - abbr
   - admonition

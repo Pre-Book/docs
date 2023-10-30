@@ -5,13 +5,20 @@ description: How to use PreBook.
 
 # :material-hammer-wrench: Setup
 
+## :material-clipboard-list: What you'll need
+
+- A Windows ISO
+- [NTLite](https://ntlite.com)
+- A USB
+- Our preset
+
 !!! danger "This section is not finished!"
 
     Please wait until we finish building it.
 
 ## :material-disc: Obtaining an ISO
 
-PreBook is BYOM, meaning you need to get your own ISO image of windows 10 or 11 for your language.
+PreBook is **BYOM**, meaning you need to get your own ISO image of Windows 10 or 11 for your language.
 
 You can use the downloader below. Simply press one of the buttons to get started.
 
@@ -19,6 +26,8 @@ You can use the downloader below. Simply press one of the buttons to get started
     If this tool doesn't work, try disabling your ad or tracker blocker.
 
 **Based upon:** [Microsoft Software Download Listing](https://github.com/massgravel/msdl)
+
+**Taken from:** [AtlasOS Docs](https://github.com/Atlas-OS/docs/blob/master/docs/javascripts/msdl.js)
 
 
 <br><br>
@@ -69,8 +78,17 @@ You can use the downloader below. Simply press one of the buttons to get started
     5. After the ISO has completed downloading, click `Finish` to end the installation.
     
     *Taken from the AtlasOS Docs.*
+## Installing NTLite
+
+Click the button below and pick `64-bit` under `Stable`:
+
+![ntlite_dl](../../assets/ntlite_dl.png)
+
+[Download NTLite :material-open-in-new:](https://www.ntlite.com/download/){ .md-button }
 
 ## :material-book-cog: Choose a playbook
+
+This will affect what additional tweaks need to be done.
 
 ??? warning "Do not use the Ameliorated playbook!"
 
