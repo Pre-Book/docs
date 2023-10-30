@@ -33,7 +33,7 @@ title: Home
 
 ## Links
 
-<div align="center">
+<div style="text-align:center;" markdown>
 
 [FAQ](faq/README.md){ .md-button } [Setup](setup/README.md){ .md-button }
 
