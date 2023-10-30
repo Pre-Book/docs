@@ -24,7 +24,22 @@ You can download the latest preset release at the link below.
 
 Once you're there, head to the **Assets** section and pick the version for your copy of Windows (PreBook10 or PreBook11).
 
-You will get a ZIP file containing everything you'll need.
+You will get a ZIP file containing everything you'll need, which will look something like this:
+
+```js title="PreBook10.zip"
+.
+├── registry/
+│   └── <.reg files> // (1)!
+├── ei.cfg // (2)!
+└── PreBook10.xml // (3)!
+```
+
+1.  All the .reg files specific to your version are here.
+2.  This file forces the edition picker, more on that later.
+3.  The preset itself.
+
+Extract this ZIP file somewhere using your favorite archiving tool (like [7-zip](https://7-zip.org)). Keep it safe for now, we'll need it later.
+
 
 ## :material-disc: Obtaining an ISO
 
@@ -92,7 +107,7 @@ You can use the downloader below. Simply press one of the buttons to get started
 
 Click the button below and pick `64-bit` under `Stable`:
 
-![ntlite_dl](../../assets/ntlite_dl.png)
+[![ntlite_dl](../assets/ntlite_dl.png)](https://www.ntlite.com/download/)
 
 
 

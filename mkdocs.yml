@@ -18,7 +18,11 @@ theme:
     - content.tooltips
     - content.action.edit
     - content.action.view
+    - content.code.copy
+    - content.code.annotate
   icon:
+    edit: material/file-edit
+    view: material/file-eye
     repo: fontawesome/brands/github
     admonition:
       note: octicons/tag-16
