@@ -37,7 +37,6 @@ title: Home
 
 ## Contributors
 
-<a href="https://github.com/pre-book/prebook/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=pre-book/prebook" />
-</a>
+
+[![Contributors](https://contrib.rocks/image?repo=pre-book/prebook)](https://github.com/pre-book/prebook/graphs/contributors)
 
