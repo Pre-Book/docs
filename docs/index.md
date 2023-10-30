@@ -35,7 +35,7 @@ title: Home
 
 <div style="text-align:center;" markdown>
 
-[FAQ](faq/README.md){ .md-button } [Setup](setup/README.md){ .md-button }
+[:material-information-outline: FAQ](faq/README.md){ .md-button } [:material-hammer-wrench: Setup](setup/README.md){ .md-button }
 
 </div>
 
