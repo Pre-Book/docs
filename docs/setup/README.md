@@ -9,6 +9,10 @@ description: How to use PreBook.
 
     Please wait until we finish building it.
 
+## :material-disc: Obtaining an ISO
+
+Coming soon:tm:
+
 ## :material-book-cog: Choose a playbook
 
 ??? warning "Do not use the Ameliorated playbook!"
