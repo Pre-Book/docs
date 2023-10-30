@@ -16,7 +16,7 @@ PreBook is BYOM, meaning you need to get your own ISO image of windows 10 or 11 
 You can use the downloader below. Simply press one of the buttons to get started.
 
 !!! warning "Adblocker issues"
-    If you have a tracker blocker, this probably won't work.
+    If this tool doesn't work, try disabling your ad or tracker blocker.
 
 **Based upon:** [Microsoft Software Download Listing](https://github.com/massgravel/msdl)
 
