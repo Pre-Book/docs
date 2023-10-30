@@ -31,6 +31,13 @@ title: Home
 
     Proceed at your own risk.
 
+## Links
+
+<div align="center">
+
+[FAQ](faq/README.md){ .md-button } [Setup](setup/README.md){ .md-button }
+
+</div>
 
 ## Authors
 
