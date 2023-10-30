@@ -11,6 +11,8 @@ description: How to use PreBook.
 
 ## :material-disc: Obtaining an ISO
 
+PreBook is BYOM, meaning you need to get your own ISO image of windows 10 or 11 for your language.
+
 You can use the downloader below. Simply press one of the buttons to get started.
 
 !!! warning "Adblocker issues"

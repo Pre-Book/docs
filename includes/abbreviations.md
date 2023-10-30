@@ -21,3 +21,4 @@
 *[NTLite]: Tool for modifying WIM images and Windows editions inside install media
 *[Content Delivery Manager]: Responsible for the click-to-install shortcuts in the start menu and the Microsoft sponsored wallpapers in the lockscreen
 *[Support directory]: Contains the migration wizard in the ISO image. This does not influence the final installation product
+*[BYOM]: Bring Your Own Media
