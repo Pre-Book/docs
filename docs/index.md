@@ -36,7 +36,7 @@ title: Home
 
 <div style="text-align:center;" markdown>
 
-[:material-information-outline: FAQ](faq/README.md){ .md-button } [:material-hammer-wrench: Setup](setup/README.md){ .md-button }
+[:material-download: Download](https://github.com/Pre-Book/PreBook/releases/latest){ .md-button } [:material-information-outline: FAQ](faq/README.md){ .md-button } [:material-hammer-wrench: Setup](setup/README.md){ .md-button }
 
 </div>
 

@@ -16,6 +16,16 @@ description: How to use PreBook.
 
     Please wait until we finish building it.
 
+## :material-download: Obtaining our preset
+
+You can download the latest preset release at the link below.
+
+[:material-download: Download PreBook](https://github.com/Pre-Book/PreBook/releases/latest){ .md-button }
+
+Once you're there, head to the **Assets** section and pick the version for your copy of Windows (PreBook10 or PreBook11).
+
+You will get a ZIP file containing everything you'll need.
+
 ## :material-disc: Obtaining an ISO
 
 PreBook is **BYOM**, meaning you need to get your own ISO image of Windows 10 or 11 for your language.
@@ -78,13 +88,19 @@ You can use the downloader below. Simply press one of the buttons to get started
     5. After the ISO has completed downloading, click `Finish` to end the installation.
     
     *Taken from the AtlasOS Docs.*
-## Installing NTLite
+## :material-package-variant: Installing NTLite
 
 Click the button below and pick `64-bit` under `Stable`:
 
 ![ntlite_dl](../../assets/ntlite_dl.png)
 
+
+
 [Download NTLite :material-open-in-new:](https://www.ntlite.com/download/){ .md-button }
+
+Open the installer, and go through the steps.
+
+Once NTLite is installed, we can continue with the other steps.
 
 ## :material-book-cog: Choose a playbook
 

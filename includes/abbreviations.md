@@ -23,4 +23,4 @@
 *[Support directory]: Contains the migration wizard in the ISO image. This does not influence the final installation product
 *[BYOM]: Bring Your Own Media
 *[ISO]: A virtual disk, like a DVD in a file that can be burned to a disk or flashed to a USB
-*[preset]: XML file that contains a premade configuration for NTLite
+*[Preset]: XML file that contains a premade configuration for NTLite
