@@ -60,6 +60,10 @@ extra:
       link: https://discord.gg/Qf3PJKhAFg
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/msdl.css
+
+extra_javascript:
+  - javascripts/msdl.js
 
 nav:
   - Home:
