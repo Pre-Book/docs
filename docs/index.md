@@ -19,6 +19,7 @@ title: Home
 
 [![Release](https://img.shields.io/github/v/release/pre-book/prebook?sort=semver&style=flat-square&cacheSeconds=3600)](https://github.com/pre-book/prebook/releases/latest)
 [![License](https://img.shields.io/github/license/pre-book/prebook?style=flat-square&cacheSeconds=86400)](https://github.com/pre-book/prebook/blob/main/LICENSE)
+[![Docs License](https://img.shields.io/github/license/pre-book/docs?style=flat-square&label=license%20(docs)&cacheSeconds=86400)](https://github.com/Pre-Book/docs/blob/main/LICENSE)
 [![GitHub Repo stars](https://img.shields.io/github/stars/pre-book/prebook?style=flat-square&cacheSeconds=86400)](https://github.com/pre-book/prebook)
 [![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/t/pre-book/prebook?style=flat-square&cacheSeconds=86400)](https://github.com/Pre-Book/PreBook/commits/main/)
 
