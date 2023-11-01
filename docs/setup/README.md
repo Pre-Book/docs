@@ -9,7 +9,7 @@ description: How to use PreBook.
 
 - A Windows ISO
 - A Windows PC or VM
-- [NTLite](https://ntlite.com)
+- [NTLite](https://ntlite.com) (free edition)
 - A USB
 - [Rufus](https://rufus.ie "Bootable USB creator for Windows") or [Ventoy](https://www.ventoy.net "Multiple ISOs on one USB stick!")
 - Our preset
@@ -46,7 +46,6 @@ You will get a ZIP file containing everything you'll need, which will look somet
 Extract this ZIP file somewhere (like your desktop) using your favorite archiving tool (like [7-zip](https://7-zip.org)). Keep it safe for now, we'll need it later.
 
 ![prebook-desktop](../assets/prebook-desktop.png)
-
 
 ## :material-disc: Obtaining an ISO
 
@@ -112,6 +111,9 @@ You can use the downloader below. Simply press one of the buttons to get started
     *Taken from the AtlasOS Docs.*
 ## :material-package-variant: Installing NTLite
 
+!!! info "You only need NTLite free!"
+    You do not need the paid version of NTLite to use PreBook. However, you should [buy it](https://www.ntlite.com/shop/) to show some :heart: to the developer!
+
 Click the button below and pick `64-bit` under `Stable`:
 
 [![ntlite_dl](../assets/ntlite_dl.png)](https://www.ntlite.com/download/)
@@ -119,6 +121,8 @@ Click the button below and pick `64-bit` under `Stable`:
 
 
 [Download NTLite :material-open-in-new:](https://www.ntlite.com/download/){ .md-button }
+
+
 
 Open the installer, and go through the steps.
 
