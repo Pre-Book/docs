@@ -74,6 +74,7 @@ extra_javascript:
 nav:
   - Home:
       - Home: index.md
+      - Branding: branding.md
   - FAQ:
       - FAQ: faq/README.md
       - Details:  

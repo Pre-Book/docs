@@ -5,12 +5,6 @@ title: Home
 glightbox: false
 ---
 
-<style>
-.md-sidebar--primary {
-  visibility: hidden;
-}
-</style>
-
 <div align="center">
 <figure>
   <img src="assets/PreBook.png">
