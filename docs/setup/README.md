@@ -128,7 +128,8 @@ Open the installer, and go through the steps.
 
 Once you come here, pick `Free`, then `Close`:
 
-![license](../assets/license.png)
+![license](../assets/license.png#only-dark)
+![license](../assets/license-light.png#only-light)
 
 Once NTLite is installed, we can continue with the other steps.
 
