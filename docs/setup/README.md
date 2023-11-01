@@ -126,6 +126,10 @@ Click the button below and pick `64-bit` under `Stable`:
 
 Open the installer, and go through the steps.
 
+Once you come here, pick `Free`, then `Close`:
+
+![license](../assets/license.png)
+
 Once NTLite is installed, we can continue with the other steps.
 
 ## :material-book-cog: Choose a playbook
