@@ -56,30 +56,37 @@ Then, import our preset (the `.xml` file)
 
 Now, right click our preset and choose `Load > Overwrite`.
 
-![ntlite-5](../../assets/ntlite-5.png)
+![ntlite-5](../../assets/ntlite-5.png#only-dark)
+![ntlite-5](../../assets/ntlite-5-light.png#only-light)
 
 ### Applying registry tweaks
 
 Head over to the `Registry` tab.
 
-![ntlite-6](../../assets/ntlite-6.png)
+![ntlite-6](../../assets/ntlite-6.png#only-dark)
+![ntlite-6](../../assets/ntlite-6-light.png#only-light)
 
 At the top, click `Add > Registry Files`.
 
-![ntlite-7](../../assets/ntlite-7.png)
+![ntlite-7](../../assets/ntlite-7.png#only-dark)
+![ntlite-7](../../assets/ntlite-7-light.png#only-light)
 
-Now, find the `Disable.Drivers.Installation.in.Windows.Update.reg` in the preset folder. Load it.
 
-![ntlite-8](../../assets/ntlite-8.png)
+Now, find the `Disable.Drivers.Installation.in.Windows.Update.reg` in the preset folder. Load it. If you want you can also load any aditional tweaks in the `registry/` folder.
+
+![ntlite-8](../../assets/ntlite-8.png#only-dark)
+![ntlite-7](../../assets/ntlite-8-light.png#only-light)
 
 The Registry panel should look something like the picture below:
-![ntlite-9](../../assets/ntlite-9.png)
+![ntlite-9](../../assets/ntlite-9.png#only-dark)
+![ntlite-9](../../assets/ntlite-9-light.png#only-light)
 
 ## Building our ISO
 
 Head on over to the `Apply` tab and look at the options.
 
-![ntlite-10](../../assets/ntlite-10.png)
+![ntlite-10](../../assets/ntlite-10.png#only-dark)
+![ntlite-10](../../assets/ntlite-10-light.png#only-light)
 
 Now, the most important thing here is picking our *compression*.
 
@@ -88,7 +95,7 @@ Now, the most important thing here is picking our *compression*.
 | :material-speedometer: Compression Speed                | :material-close: Slow | :material-check-all: Fast |
 | :material-zip-box:                      Final file size |        2-3 GB         |           5 GB            |
 
-Once you've chosen, pick your compression below:
+Once you've chosen, set your compression below:
 
 === "ESD"
     ![compression](../../assets/compression.png)
@@ -99,3 +106,16 @@ Now, just tick the `Create ISO` box.
 
 ![ntlite-11](../../assets/ntlite-11.png)
 
+You'll be asked to pick a location to save and an ISO label.
+
+After you set those options, your process list should look something like this:
+
+![ntlite-final](../../assets/ntlite-final.png)
+
+Now, hit the big green `Process` button.
+
+![ntlite-process](../../assets/ntlite-process.png)
+
+This will take a while. After it's done, you will find an ISO file in the folder you set.
+
+This is the ISO we're going to flash to our USB, keep it safe.

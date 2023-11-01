@@ -21,6 +21,7 @@ theme:
     - content.code.copy
     - content.code.annotate
     - content.tabs.link
+    - navigation.prune
   icon:
     edit: material/file-edit
     view: material/file-eye
