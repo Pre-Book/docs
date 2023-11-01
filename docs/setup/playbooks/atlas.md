@@ -83,9 +83,19 @@ Head on over to the `Apply` tab and look at the options.
 
 Now, the most important thing here is picking our *compression*.
 
-|                     ESD Compression                      |                  WIM compresion                   |
-| :------------------------------------------------------: | :-----------------------------------------------: |
-|                :material-close:     Slow                 |             :material-check:     Fast             |
-| :material-check-all: Effective compression (5 GB to 2-3) | :material-close:      No compression (still 5 GB) |
-|                         `DELETE`                         |       :material-close:     Delete resource        |
+| Details                                                 |    ESD Compression    |      WIM compresion       |
+| :------------------------------------------------------ | :-------------------: | :-----------------------: |
+| :material-speedometer: Compression Speed                | :material-close: Slow | :material-check-all: Fast |
+| :material-zip-box:                      Final file size |        2-3 GB         |           5 GB            |
+
+Once you've chosen, pick your compression below:
+
+=== "ESD"
+    ![compression](../../assets/compression.png)
+=== "WIM"
+    ![compression-wim](../../assets/compression-wim.png)
+
+Now, just tick the `Create ISO` box.
+
+![ntlite-11](../../assets/ntlite-11.png)
 
