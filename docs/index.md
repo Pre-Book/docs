@@ -42,7 +42,7 @@ glightbox: false
 ## Authors
 
 - [Asterisk](https://asterisk.shinken.studio) \- Documentation & Repository
-- [conaN](https://discord.com/users/779674532481990656) \- Presets & Registry Tweaks
+- [conaN](https://discord.com/users/779674532481990656) \- Presets, Registry Tweaks & Logo
 
 ## Contributors
 
