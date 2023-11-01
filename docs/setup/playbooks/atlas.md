@@ -28,11 +28,44 @@ Now, we can actually apply our preset.
 
 Assuming you have NTLite installed, simply open it. You'll be shown a confusing window, so just follow this guide step-by-step.
 
-### Loading our ISO image
+### Loading the ISO image
 
 First, click `Add` on the top, then select `Image (ISO, WIM, ESD, SWM)` and browse for the Windows ISO you downloaded in the [:material-hammer-wrench: Setup section](../README.md#obtaining-an-iso).
 
 ![ntlite-1](../../assets/ntlite-1-v2.png#only-dark)
 ![ntlite-1](../../assets/ntlite-1-light.png#only-light)
 
-This will extract the image into the edit cache.
+This will add the image into the image list below. Right click it and choose `New Edit`.
+
+![ntlite-2](../../assets/ntlite-2.png#only-dark)
+![ntlite-2](../../assets/ntlite-2-light.png#only-light)
+
+This will extract the image into the edit cache. Press OK at the prompt.
+
+Then, load the `Pro` edition from the edit cache:
+
+![ntlite-3](../../assets/ntlite-3.png#only-dark)
+![ntlite-3](../../assets/ntlite-3-light.png#only-light)
+
+### Loading the preset
+
+Then, import our preset (the `.xml` file)
+
+![ntlite-4](../../assets/ntlite-4.png#only-dark)
+![ntlite-4](../../assets/ntlite-4-light.png#only-light)
+
+Now, right click our preset and choose `Load > Overwrite`.
+
+![ntlite-5](../../assets/ntlite-5.png)
+
+### Applying registry tweaks
+
+Head over to the `Registry` tab.
+
+![ntlite-6](../../assets/ntlite-6.png)
+
+At the top, click `Add > Registry Files`.
+
+![ntlite-7](../../assets/ntlite-7.png)
+
+
