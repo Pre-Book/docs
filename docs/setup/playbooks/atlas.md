@@ -30,8 +30,9 @@ Assuming you have NTLite installed, simply open it. You'll be shown a confusing 
 
 ### Loading our ISO image
 
-First, click `Open` on the top, and browse for the Windows ISO you downloaded in the [:material-hammer-wrench: Setup section](../README.md#obtaining-an-iso).
+First, click `Add` on the top, then select `Image (ISO, WIM, ESD, SWM)` and browse for the Windows ISO you downloaded in the [:material-hammer-wrench: Setup section](../README.md#obtaining-an-iso).
 
-<image>
+![ntlite-1](../../assets/ntlite-1-v2.png#only-dark)
+![ntlite-1](../../assets/ntlite-1-light.png#only-light)
 
 This will extract the image into the edit cache.
