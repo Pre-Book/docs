@@ -98,24 +98,36 @@ Now, the most important thing here is picking our *compression*.
 Once you've chosen, set your compression below:
 
 === "ESD"
-    ![compression](../../assets/compression.png)
+    ![compression](../../assets/compression.png#only-dark)
+    ![compression](../../assets/compression-light.png#only-light)
 === "WIM"
-    ![compression-wim](../../assets/compression-wim.png)
+    ![compression-wim](../../assets/compression-wim.png#only-dark)
+    ![compression-wim](../../assets/compression-wim-light.png#only-light)
 
 Now, just tick the `Create ISO` box.
 
-![ntlite-11](../../assets/ntlite-11.png)
+![ntlite-11](../../assets/ntlite-11.png#only-dark)
+![ntlite-11](../../assets/ntlite-11-light.png#only-light)
 
 You'll be asked to pick a location to save and an ISO label.
 
 After you set those options, your process list should look something like this:
 
-![ntlite-final](../../assets/ntlite-final.png)
+![ntlite-final](../../assets/ntlite-final.png#only-dark)
+![ntlite-final](../../assets/ntlite-final-light.png#only-light)
 
 Now, hit the big green `Process` button.
 
-![ntlite-process](../../assets/ntlite-process.png)
+![ntlite-process](../../assets/ntlite-process.png#only-dark)
+![ntlite-process](../../assets/ntlite-process-light.png#only-light)
 
 This will take a while. After it's done, you will find an ISO file in the folder you set.
 
 This is the ISO we're going to flash to our USB, keep it safe.
+
+## Flashing our ISO
+
+=== "Rufus"
+    a
+=== "Ventoy"
+    a
