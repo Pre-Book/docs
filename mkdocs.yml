@@ -74,7 +74,8 @@ nav:
       - Home: index.md
   - FAQ:
       - FAQ: faq/README.md
-      - Removed Features: faq/features.md
+      - Details:  
+        - Removed Features: faq/features.md
   - Setup:
       - Setup: setup/README.md
       - Playbooks:
