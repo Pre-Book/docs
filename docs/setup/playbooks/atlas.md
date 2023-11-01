@@ -18,9 +18,9 @@ Head on over to the AtlasOS [download page](https://atlasos.net/downloads) and g
 
 Extract the AtlasOS ZIP file to the same folder as the preset. Do the same thing for the AME wizard ZIP file.
 
-Your preset folder should look something like this:
-
-<image>
+Your preset folder should look something like this now:
+![prebook-files-2](../../assets/prebook-files-2-light.png#only-light)
+![prebook-files-2](../../assets/prebook-files-2.png#only-dark)
 
 Now, we can actually apply our preset.
 
@@ -30,7 +30,7 @@ Assuming you have NTLite installed, simply open it. You'll be shown a confusing 
 
 ### Loading our ISO image
 
-First, click `Open` on the top, and browse for the Windows ISO you downloaded in the [Setup section](../README.md#obtaining-an-iso).
+First, click `Open` on the top, and browse for the Windows ISO you downloaded in the [:material-hammer-wrench: Setup section](../README.md#obtaining-an-iso).
 
 <image>
 

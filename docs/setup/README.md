@@ -8,8 +8,10 @@ description: How to use PreBook.
 ## :material-clipboard-list: What you'll need
 
 - A Windows ISO
+- A Windows PC or VM
 - [NTLite](https://ntlite.com)
 - A USB
+- [Rufus](https://rufus.ie "Bootable USB creator for Windows") or [Ventoy](https://www.ventoy.net "Multiple ISOs on one USB stick!")
 - Our preset
 
 !!! danger "This section is not finished!"
@@ -22,23 +24,28 @@ You can download the latest preset release at the link below.
 
 [:material-download: Download PreBook](https://github.com/Pre-Book/PreBook/releases/latest){ .md-button }
 
-Once you're there, head to the **Assets** section and pick the version for your copy of Windows (PreBook10 or PreBook11).
+Once you're there, head to the **Assets** section and pick the version for your copy of Windows (`PreBook10` or `PreBook11`).
 
 You will get a ZIP file containing everything you'll need, which will look something like this:
 
-```js title="PreBook10.zip"
+![prebook-files-1](../assets/prebook-files-1.png#only-dark)
+![prebook-files-1](../assets/prebook-files-1-light.png#only-light)
+
+```js title="PreBookXX.zip"
 .
 ├── registry/
 │   └── <.reg files> // (1)!
 ├── ei.cfg // (2)!
-└── PreBook10.xml // (3)!
+└── PreBookXX.xml // (3)!
 ```
 
 1.  All the .reg files specific to your version are here.
 2.  This file forces the edition picker, more on that later.
-3.  The preset itself.
+3.  The preset itself. Named PreBook10 or PreBook11.
 
-Extract this ZIP file somewhere using your favorite archiving tool (like [7-zip](https://7-zip.org)). Keep it safe for now, we'll need it later.
+Extract this ZIP file somewhere (like your desktop) using your favorite archiving tool (like [7-zip](https://7-zip.org)). Keep it safe for now, we'll need it later.
+
+![prebook-desktop](../assets/prebook-desktop.png)
 
 
 ## :material-disc: Obtaining an ISO

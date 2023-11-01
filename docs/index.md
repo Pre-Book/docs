@@ -2,6 +2,7 @@
 icon: material/home
 description: PreBook is an NTLite preset to create a lightweight base ISO for any modification.
 title: Home
+glightbox: false
 ---
 
 <style>
@@ -11,7 +12,11 @@ title: Home
 </style>
 
 <div align="center">
-<h1 style="margin-bottom:0.35em;">PreBook</h1>
+<figure>
+  <img src="assets/PreBook.png">
+  <figcaption></figcaption>
+</figure>
+<!-- <h1 style="margin-bottom:0.35em;">PreBook</h1> -->
 <em>An NTLite preset to create a lightweight base ISO for any modification.</em>
 </div>
 

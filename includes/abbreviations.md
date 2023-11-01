@@ -24,3 +24,4 @@
 *[BYOM]: Bring Your Own Media
 *[ISO]: A virtual disk, like a DVD in a file that can be burned to a disk or flashed to a USB
 *[Preset]: XML file that contains a premade configuration for NTLite
+*[VM]: Virtual Machine

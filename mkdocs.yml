@@ -80,7 +80,7 @@ nav:
       - Playbooks:
         - AtlasOS: setup/playbooks/atlas.md
         - ReviOS: setup/playbooks/revi.md
-        - Stock: setup/playbooks/stock.md   
+        - Stock: setup/playbooks/stock.md
 
 
 repo_url: https://github.com/pre-book/docs
@@ -119,6 +119,7 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
+  - meta
 plugins:
   - search
   - social
