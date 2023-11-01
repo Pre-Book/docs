@@ -68,4 +68,24 @@ At the top, click `Add > Registry Files`.
 
 ![ntlite-7](../../assets/ntlite-7.png)
 
+Now, find the `Disable.Drivers.Installation.in.Windows.Update.reg` in the preset folder. Load it.
+
+![ntlite-8](../../assets/ntlite-8.png)
+
+The Registry panel should look something like the picture below:
+![ntlite-9](../../assets/ntlite-9.png)
+
+## Building our ISO
+
+Head on over to the `Apply` tab and look at the options.
+
+![ntlite-10](../../assets/ntlite-10.png)
+
+Now, the most important thing here is picking our *compression*.
+
+|                     ESD Compression                      |                  WIM compresion                   |
+| :------------------------------------------------------: | :-----------------------------------------------: |
+|                :material-close:     Slow                 |             :material-check:     Fast             |
+| :material-check-all: Effective compression (5 GB to 2-3) | :material-close:      No compression (still 5 GB) |
+|                         `DELETE`                         |       :material-close:     Delete resource        |
 

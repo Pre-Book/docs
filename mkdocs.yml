@@ -20,6 +20,7 @@ theme:
     - content.action.view
     - content.code.copy
     - content.code.annotate
+    - content.tabs.link
   icon:
     edit: material/file-edit
     view: material/file-eye
@@ -104,6 +105,9 @@ markdown_extensions:
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
+  - tables
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.snippets:
       auto_append:
         - includes/abbreviations.md
