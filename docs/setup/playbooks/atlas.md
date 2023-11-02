@@ -14,7 +14,7 @@ description: Set up PreBook with AtlasOS.
 
 Head on over to the AtlasOS [download page](https://atlasos.net/downloads) and get the two files there.
 
-![atlas_dl](../../assets/atlas_dl.png)
+[![atlas_dl](../../assets/atlas_dl.png)](https://atlasos.net/downloads)
 
 Extract the AtlasOS ZIP file to the same folder as the preset. Do the same thing for the AME wizard ZIP file.
 
