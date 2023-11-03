@@ -41,7 +41,7 @@ glightbox: false
 
 ## Authors
 
-- [Asterisk](https://asterisk.shinken.studio) \- Documentation & Repository
+- [Asterisk](https://ast3risk-ops.carrd.co) \- Documentation & Repository
 - [conaN](https://discord.com/users/779674532481990656) \- Presets, Registry Tweaks & Logo
 
 ## Contributors
