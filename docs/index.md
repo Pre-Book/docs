@@ -35,7 +35,7 @@ glightbox: false
 
 <div style="text-align:center;" markdown>
 
-[:material-download: Download](https://github.com/Pre-Book/PreBook/releases/latest){ .md-button } [:material-information-outline: FAQ](faq/README.md){ .md-button } [:material-hammer-wrench: Setup](setup/README.md){ .md-button }
+[:material-download: Download](https://github.com/Pre-Book/PreBook/releases/latest){ .md-button } [:material-information-outline: FAQ](faq/README.md){ .md-button } [:material-hammer-wrench: Setup](setup/README.md){ .md-button } [:material-github: Source Code](https://github.com/pre-book/prebook){ .md-button }
 
 </div>
 
