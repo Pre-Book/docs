@@ -7,7 +7,7 @@ description: Set up PreBook with AtlasOS.
 # :material-controller: AtlasOS
 
 !!! warning "The Atlas team will not provide support!"
-    The AtlasOS support team will not provide support if you use this, please seek support from us instead.
+    The AtlasOS support team will not provide support if you use PreBook with the Atlas playbook, please seek support from us instead.
 
 !!! danger "This also isn't finished!"
     Please be patient.
