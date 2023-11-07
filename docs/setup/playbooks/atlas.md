@@ -6,13 +6,20 @@ description: Set up PreBook with AtlasOS.
 
 # :material-controller: AtlasOS
 
+!!! warning "The Atlas team will not provide support!"
+    The AtlasOS support team will not provide support if you use this, please seek support from us instead.
+
 !!! danger "This also isn't finished!"
     Please be patient.
 
-
 ## Download AtlasOS
 
-Head on over to the AtlasOS [download page](https://atlasos.net/downloads) and get the two files there.
+~~Head on over to the AtlasOS [download page](https://atlasos.net/downloads) and get the two files there.~~
+
+!!! info "Atlas is currently unavalible!"
+    This is due to the fact that 0.3 was so buggy they've delayed until the release of 0.3.1.
+    
+    Visit their [:fontawesome-brands-discord: Discord](https://discord.atlasos.net) for more info.
 
 [![atlas_dl](../../assets/atlas_dl.png)](https://atlasos.net/downloads)
 
