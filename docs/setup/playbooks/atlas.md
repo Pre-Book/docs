@@ -14,14 +14,9 @@ description: Set up PreBook with AtlasOS.
 
 ## Download AtlasOS
 
-~~Head on over to the AtlasOS [download page](https://atlasos.net/downloads) and get the two files there.~~
+Head on over to the AtlasOS [download page](https://atlasos.net) and get the two files there.
 
-!!! info "Atlas is currently unavalible!"
-    This is due to the fact that 0.3 was so buggy they've delayed until the release of 0.3.1.
-    
-    Visit their [:fontawesome-brands-discord: Discord](https://discord.atlasos.net) for more info.
-
-[![atlas_dl](../../assets/atlas_dl.png)](https://atlasos.net/downloads)
+[![atlas-dl](../../assets/atlas-dl.png)](https://atlasos.net)
 
 Extract the AtlasOS ZIP file to the same folder as the preset. Do the same thing for the AME wizard ZIP file.
 
