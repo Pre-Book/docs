@@ -95,12 +95,27 @@ You can use the downloader below. Simply press one of the buttons to get started
 <input id="msdl-session-id" type="hidden">
 </center>
 
-??? grey-tip "Alternative: Windows Media Creation Tool"
-    
-    !!! failure "ISOs from this tool are out of date!"
-        Please use the [MSDL webpage](https://massgrave.dev/msdl) as an alternative for now.
-    
-    *Taken from the AtlasOS Docs.*
+??? note "Alternatives"
+    === "Windows Media Creation Tool"
+        !!! failure "Windows 11"
+            AME playbooks only support Windows 10 22H2 and Windows 11 23H2.
+
+            The current Media Creation Tool for Windows 11 only creates 22H2 media, so the Windows 11 Media Creation Tool currently can't be used for Prebook.
+
+        1. Download the [Windows 10](https://go.microsoft.com/fwlink/?LinkId=691209) Media Creation Tool and open it.
+        2. Click the `Accept` button to agree to the Microsoft license terms.
+        3. Tick `Create installation media (USB flash drive, DVD, or ISO file) for another PC`, click `Next`, and choose:
+            * Language: **Desired language**
+            * Edition: **Windows 10**
+            * Architecture: **64-bit (x64)**
+        4. Choose the `ISO file` option and choose the download location.
+        5. After the ISO has finished downloading, click `Finish` to close the tool.
+        *Taken from the AtlasOS Docs. Credit to all AtlasOS contributors.*
+    === "MSDL website"
+        Visit the [MSDL website](https://massgrave.dev/msdl), and download your Windows ISO from there.
+
+        [:material-microsoft-windows: Download Windows 10](https://massgrave.dev/msdl/#2618){ .md-button }
+        [:material-microsoft: Download Windows 11](https://massgrave.dev/msdl/#2860){ .md-button }
 
 ## :material-package-variant: Installing NTLite
 
