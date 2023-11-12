@@ -114,7 +114,7 @@ You can use the downloader below. Simply press one of the buttons to get started
     === "MSDL website"
         Visit the [MSDL website](https://massgrave.dev/msdl), and download your Windows ISO from there.
 
-        For the ISO download link, make sure to pick `ISO x64 Download`.
+        When choosing the ISO download link at the end, make sure to pick `IsoX64 Download`.
 
         [:material-microsoft-windows: Download Windows 10](https://massgrave.dev/msdl/#2618){ .md-button }
         [:material-microsoft: Download Windows 11](https://massgrave.dev/msdl/#2860){ .md-button }
