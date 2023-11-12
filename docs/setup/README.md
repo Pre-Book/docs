@@ -72,7 +72,10 @@ To do this, you can use the downloader below. Simply press one of the download b
 -->
 
 <center class="centerMsdl">
-<button class="win-dl" onclick="getWindows(2616);">Download Windows 11 x86_64</button> <button class="win-dl" onclick="getWindows(2618);">Download Windows 10 x86_64</button>
+<div class="msdl-button-container">
+    <button class="msdl-button" style="margin-right: 2px" onclick="getWindows(2860);">Download Windows 11 x64</button>
+    <button class="msdl-button" style="margin-left: 2px" onclick="getWindows(2618);">Download Windows 10 x64</button>
+</div>
 
 <div id="msdl-ms-content"></div>
 
