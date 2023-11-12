@@ -10,6 +10,7 @@
     [data-md-color-scheme=slate] {
         --md-dropdown-icon: var(--md-dropdown-icon-dark)
     }
+
     [data-md-color-scheme=default] {
         --md-dropdown-icon: var(--md-dropdown-icon-light)
     }
@@ -17,17 +18,19 @@
 
 .md-typeset .admonition.grey-tip,
 .md-typeset details.grey-tip {
-  border-color:#9e9e9e
+    border-color: #9e9e9e
 }
-.md-typeset .grey-tip > .admonition-title,
-.md-typeset .grey-tip > summary {
-  background-color:#9e9e9e1a
+
+.md-typeset .grey-tip>.admonition-title,
+.md-typeset .grey-tip>summary {
+    background-color: #9e9e9e1a
 }
-.md-typeset .grey-tip > .admonition-title::before,
-.md-typeset .grey-tip > summary:before {
-  background-color:#9e9e9e;
-  -webkit-mask-image:var(--md-admonition-icon--tip);
-  mask-image:var(--md-admonition-icon--tip)
+
+.md-typeset .grey-tip>.admonition-title::before,
+.md-typeset .grey-tip>summary:before {
+    background-color: #9e9e9e;
+    -webkit-mask-image: var(--md-admonition-icon--tip);
+    mask-image: var(--md-admonition-icon--tip)
 }
 
 #msdl-ms-content,
@@ -41,8 +44,14 @@
 }
 
 #msdl-processing-error {
-    line-height: 1;
+    line-height: normal;
+    color: #d16464;
+    max-width: 60%;
+}
+
+#msdl-error-code {
     color: var(--md-code-hl-number-color);
+    font-weight: bold;
 }
 
 select {
@@ -79,12 +88,12 @@ option {
     border: .1rem solid;
     border-color: currentcolor;
     border-radius: .1rem;
-    color: var(#5e8bde);
+    color: var(--md-primary-fg-color);
     cursor: pointer;
     display: inline-block;
     font-weight: 700;
     padding: .625em 2em;
-    transition: color 125ms,background-color 125ms,border-color 125ms;
+    transition: color 125ms, background-color 125ms, border-color 125ms;
 }
 
 .win-dl:hover {

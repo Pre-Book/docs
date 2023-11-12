@@ -8,12 +8,14 @@
 //  - Simplification of certain functions like updateVars
 //  - Fixes/adaptations for use in Atlas documentation
 
-const langsUrl = "https://www.microsoft.com/en-us/api/controls/contentinclude/html?pageId=cd06bda8-ff9c-4a6e-912a-b92a21f42526&host=www.microsoft.com&segments=software-download%2cwindows11&query=&action=getskuinformationbyproductedition&sdVersion=2";
-const downUrl = "https://www.microsoft.com/en-us/api/controls/contentinclude/html?pageId=cfa9e580-a81e-4a4b-a846-7b21bf4e2e5b&host=www.microsoft.com&segments=software-download%2Cwindows11&query=&action=GetProductDownloadLinksBySku&sdVersion=2";
-const sessionUrl = "https://vlscppe.microsoft.com/fp/tags?org_id=y6jn8c31&session_id="
-
-const apiUrl = "https://massgrave.dev/api/msdl/"
-const sharedSessionGUID = "47cbc254-4a79-4be6-9866-9c625eb20911";
+const langsUrl =
+    "https://www.microsoft.com/en-us/api/controls/contentinclude/html?pageId=cd06bda8-ff9c-4a6e-912a-b92a21f42526&host=www.microsoft.com&segments=software-download%2cwindows11&query=&action=getskuinformationbyproductedition&sdVersion=2";
+const downUrl =
+    "https://www.microsoft.com/en-us/api/controls/contentinclude/html?pageId=cfa9e580-a81e-4a4b-a846-7b21bf4e2e5b&host=www.microsoft.com&segments=software-download%2Cwindows11&query=&action=GetProductDownloadLinksBySku&sdVersion=2";
+const sessionUrl = "https://vlscppe.microsoft.com/fp/tags?org_id=y6jn8c31&session_id=";
+const apiUrl = "https://massgrave.dev/api/msdl/";
+const sharedSessionGUID = "f8a4ea6f-3389-486b-b12d-a1093ed16661";
+const langAttempt = 3;
 
 let sessionId;
 let msContent;
@@ -21,260 +23,203 @@ let pleaseWait;
 let processingError;
 let download;
 let downloadLink;
-
-let availableProducts = {};
-let sharedSession = false;
+let getLangFailCount;
 let shouldUseSharedSession = true;
-let attemptToGetFromProxy = false;
 let winProductID;
-let isoLink;
 let skuId;
-let retry;
 
 function uuidv4() {
-	return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, c =>
-		(c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
-	);
+    return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, (c) => (c ^ (crypto.getRandomValues(new Uint8Array(1))[0] & (15 >> (c / 4)))).toString(16));
+}
+
+function showError(error) {
+    processingError.style.display = "block";
+    pleaseWait.style.display = "none";
+    msContent.style.display = "none";
+
+    if (error) {
+        console.error("ISO Downloader: " + error);
+        processingErrorText.innerHTML = 'Error: ' + error
+    } else {
+        processingErrorText.style.display = "none";
+    }
+}
+
+async function getDownloadLink(sharedSession, useProxy = false) {
+    let url;
+    if (useProxy) {
+        url = `${apiUrl}proxy?product_id=${winProductID}&sku_id=${skuId}`;
+    } else {
+        url = `${downUrl}&skuId=${skuId}&sessionId=${sharedSession ? sharedSessionGUID : sessionId.value}`
+    }
+
+    const response = await fetch(url);
+    const data = await response.text();
+    const parser = new DOMParser();
+    const downloadElements = parser.parseFromString(data, "text/html").getElementsByTagName("a");
+
+    for (let i = 0; i < downloadElements.length; i++) {
+        const href = downloadElements[i].getAttribute('href');
+        if (href && href.includes('_x64')) return href;
+    }
+
+    throw new Error
+}
+
+async function getDownload() {
+    msContent.style.display = "none";
+    pleaseWait.style.display = "block";
+    let isoLink;
+
+    async function useProxy() {
+        try {
+            console.warn("ISO Downloader: Getting ISO from Microsoft failed, attempting to use the proxy...");
+            isoLink = await getDownloadLink(false, true);
+        } catch (e) {
+            // Everything failed, show error
+            console.error("ISO Downloader: Retrieving the ISO from both Microsoft and the proxy failed, showing error to the user...");
+            showError("COMPLETE_FAILURE");
+        }
+    }
+
+    try {
+        console.info("ISO Downloader: Getting download from Microsoft without shared session...");
+        isoLink = await getDownloadLink(false);
+    } catch (e) {
+        // Shared session isn't used for users that will invalidate it
+        if (!shouldUseSharedSession) await useProxy();
+
+        // Microsoft without shared session failed, attempting with shared session
+        try {
+            console.warn("ISO Downloader: Getting ISO from Microsoft without shared session failed, attempting using shared session...");
+            isoLink = await getDownloadLink(true);
+        } catch (e) {
+            // Microsoft with and without shared session failed, try proxy
+            await useProxy();
+        }
+    }
+
+    if (!isoLink) {
+        showError("ISO_LINK_NOT_DEFINED");
+    } else if (isoLink.startsWith("https://software.download.prss.microsoft.com")) {
+        console.info("ISO Downloader: Succeeded, prompting to download ISO.")
+        pleaseWait.style.display = "none";
+        downloadLink.setAttribute("href", isoLink);
+        download.style.display = "block";
+        window.location = isoLink;
+    } else {
+        showError("ISO_LINK_NOT_MICROSOFT");
+    }
 }
 
 function updateVars() {
-	skuId = JSON.parse(document.getElementById('product-languages').value)['id'];
-}
-
-function showError() {
-	processingError.style.display = "block";
-	pleaseWait.style.display = "none";
-	msContent.style.display = "none";
-}
-
-function checkError(content, response) {
-	content.innerHTML = response;
-	let errorMessage = document.getElementById('errorModalMessage');
-
-	if (errorMessage) {
-		showError()
-		return false;
-	}
-
-	return true;
-}
-
-function downloadISO() {
-	pleaseWait.style.display = "none";
-	processingError.style.display = "none";
-
-	if (!attemptToGetFromProxy) {
-		let elements = document.getElementsByClassName('product-download-hidden');
-		for (let i = 0; i < elements.length; i++) {
-			let jsonValue = elements[i].getAttribute('value');
-
-			// Microsoft's response has invalid JSON, this fixes it
-			if (jsonValue.includes("IsoX64")) {
-				jsonValue = jsonValue.replace("IsoX64", "\"IsoX64\"");
-			} else {
-				continue;
-			}
-
-			let parsedValue = JSON.parse(jsonValue);
-			if (parsedValue.DownloadType === "IsoX64") {
-				isoLink = parsedValue.Uri
-			}
-		}
-	} else {
-		let isoLinkElement = this.querySelector('a:contains("Isox64")');
-		if (isoLinkElement) {
-			isoLink = isoLinkElement.getAttribute('href');
-		} else {
-			showError();
-			return;
-		}
-	}
-
-	if (isoLink.startsWith("https://software.download.prss.microsoft.com")) {
-		downloadLink.setAttribute("href", isoLink)
-		download.style.display = "block";
-		window.location = isoLink;
-	} else {
-		showError();
-	}
-}
-
-function displayResponseFromServer() {
-	pleaseWait.style.display = "none";
-
-	if (!(this.status == 200)) {
-		showError();
-		return;
-	}
-
-	let errorStatus = checkError(msContent, this.responseText);
-	if (!(errorStatus) && attemptToGetFromProxy) {
-		showError();
-		return;
-	} else if (!(errorStatus)) {
-		attemptToGetFromProxy = true;
-		getFromServer();
-	}
-
-	msContent.innerHTML = this.responseText
-	if (retry)
-		downloadISO();
-}
-
-function getFromServer() {
-	processingError.style.display = "none";
-	let url = apiUrl + "proxy" + "?product_id=" + winProductID +
-		"&sku_id=" + skuId;
-	let xhr = new XMLHttpRequest();
-	xhr.onload = downloadISO;
-	xhr.open("GET", url, true);
-	xhr.send();
-}
-
-function useSharedSession() {
-	sharedSession = true;
-	retry = true;
-	retryDownload();
-}
-
-function retryDownload() {
-	pleaseWait.style.display = "block";
-	processingError.style.display = 'none';
-
-	// let url = langsUrl + "&productEditionId=" + winProductID + "&sessionId=" + sharedSessionGUID;
-	let url = downUrl + "&skuId=" + skuId + "&sessionId=" + sharedSessionGUID;
-	let xhr = new XMLHttpRequest();
-	xhr.onload = displayResponseFromServer;
-	xhr.open("GET", url);
-	xhr.send();
-}
-
-function onDownloadsXhrChange() {
-	if (!(this.status == 200)) {
-		showError()
-		return;
-	}
-
-	msContent.style.display = "block";
-
-	let wasSuccessful = checkError(msContent, this.responseText);
-
-	if (wasSuccessful) {
-		pleaseWait.style.display = "none";
-		if (!sharedSession) {
-			fetch(sessionUrl + sharedSessionGUID);
-			fetch(sessionUrl + "de40cb69-50a5-415e-a0e8-3cf1eed1b7cd");
-			fetch(apiUrl + 'add_session?session_id=' + sessionId.value)
-			console.info("Using own session was successful, downloading ISO...")
-		}
-		downloadISO();
-	} else if (!sharedSession && shouldUseSharedSession) {
-		console.warn("Using own session was not successful, using shared session...")
-		useSharedSession();
-	} else {
-		console.warn("using own session was not successful, getting from Massgrave MSDL proxy...")
-		getFromServer();
-	}
-}
-
-function getDownload() {
-	msContent.style.display = "none";
-	pleaseWait.style.display = "block";
-
-	let url = downUrl + "&skuId=" + skuId + "&sessionId=" + (sharedSession ? sharedSessionGUID : sessionId.value);
-
-	let xhr = new XMLHttpRequest();
-	xhr.onload = onDownloadsXhrChange;
-	xhr.open("GET", url, true);
-	xhr.send();
+    skuId = JSON.parse(document.getElementById("product-languages").value)["id"];
 }
 
 function onLanguageXhrChange() {
-	if (!(this.status == 200))
-		return;
+    msContent.innerHTML = this.responseText;
+    if (document.getElementById("errorModalMessage")) getLangError(true);
+    console.info("ISO Downloader: Successfully got languages...")
 
-	if (pleaseWait.style.display != "block")
-		return;
+    pleaseWait.style.display = "none";
+    msContent.style.display = "block";
 
-	pleaseWait.style.display = "none";
-	msContent.style.display = "block";
+    let submitSku = document.getElementById("submit-sku");
+    submitSku.setAttribute("onClick", "getDownload();");
+    submitSku.setAttribute("class", "md-button");
 
-	if (!checkError(msContent, this.responseText))
-		return;
+    let prodLang = document.getElementById("product-languages");
+    prodLang.setAttribute("onChange", "updateVars();");
 
-	let submitSku = document.getElementById('submit-sku');
-	submitSku.setAttribute("onClick", "getDownload();");
-	submitSku.setAttribute("class", "md-button");
+    if (prodLang) {
+        let options = prodLang.options;
+        let emptyRemoved = false;
+        let englishSet = false;
 
-	let prodLang = document.getElementById('product-languages');
-	prodLang.setAttribute("onChange", "updateVars();");
+        for (let i = options.length - 1; i >= 0; i--) {
+            let option = options[i];
+            let optionValue = option.value;
 
-	if (prodLang) {
-		let options = prodLang.options;
-		let emptyRemoved = false;
-		let englishSet = false;
+            if (optionValue === "") {
+                prodLang.removeChild(option);
+                emptyRemoved = true;
+            } else if (optionValue.includes('language":"English International"}')) {
+                option.selected = true;
+                englishSet = true;
+            }
 
-		for (let i = options.length - 1; i >= 0; i--) {
-			let option = options[i];
-			let optionValue = option.value;
+            if (englishSet && emptyRemoved) {
+                break;
+            }
+        }
+    }
 
-			if (optionValue === "") {
-				prodLang.removeChild(option);
-				emptyRemoved = true;
-			} else if (optionValue.includes('language":"English"}')) {
-				option.selected = true;
-				englishSet = true;
-			}
-
-			if (englishSet && emptyRemoved) {
-				break;
-			}
-		}
-	}
-
-	updateVars();
+    updateVars();
 }
 
-function getLanguages(productId) {
-	let url = langsUrl + "&productEditionId=" + productId +
-		"&sessionId=" + (sharedSession ? sharedSessionGUID : sessionId.value);
-
-	let xhr = new XMLHttpRequest();
-	xhr.onload = onLanguageXhrChange;
-	xhr.open("GET", url, true);
-	xhr.send();
+function getLangError(msFailure) {
+    setTimeout(() => {
+        getLangFailCount++;
+        if (getLangFailCount > langAttempt) {
+            if (msFailure) {
+                showError("MS_FAILED_TO_GET_LANGS");
+            } else {
+                showError("HTTP_FAILED_TO_GET_LANGS");
+            }
+        } else {
+            console.warn(`ISO Downloader: Failed to get langauges ${getLangFailCount} times, and Microsoft's response failing is ${msFailure}. Max tries is ${langAttempt}.`)
+            getLanguages();
+        }
+    }, 1000);
 }
 
-function prepareDownload(id) {
-	msContent.style.display = "none";
-	processingError.style.display = "none";
-	download.style.display = "none";
-	pleaseWait.style.display = "block";
-
-	getLanguages(id)
+function getLanguages(sharedSession = false) {
+    let xhr = new XMLHttpRequest();
+    xhr.onload = onLanguageXhrChange;
+    xhr.onerror = function() {
+        getLangError(false);
+    };    
+    xhr.open("GET", `${langsUrl}&productEditionId=${winProductID}&sessionId=${sharedSession ? sharedSessionGUID : sessionId.value}`, true);
+    xhr.send();
 }
 
 function getWindows(id) {
-	sessionId = document.getElementById('msdl-session-id');
-	msContent = document.getElementById('msdl-ms-content');
-	pleaseWait = document.getElementById('msdl-please-wait');
-	processingError = document.getElementById('msdl-processing-error');
-	download = document.getElementById('msdl-download');
-	downloadLink = document.getElementById('msdl-download-link');
+    // Define variables for contents of page
+    sessionId = document.getElementById("msdl-session-id");
+    msContent = document.getElementById("msdl-ms-content");
+    pleaseWait = document.getElementById("msdl-please-wait");
+    processingError = document.getElementById("msdl-processing-error");
+    processingErrorText = document.getElementById("msdl-error-code");
+    download = document.getElementById("msdl-download");
+    downloadLink = document.getElementById("msdl-download-link");
 
-	sessionId.value = uuidv4();
+    // Misc variables
+    getLangFailCount = 0;
 
-	const xhr = new XMLHttpRequest();
-	xhr.open("GET", sessionUrl + sessionId.value, true);
-	xhr.send();
+    // Start new session
+    sessionId.value = uuidv4();
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", sessionUrl + sessionId.value, true);
+    xhr.send();
 
-	let mxhr = new XMLHttpRequest();
-	mxhr.onload = function() {
-		if (this.status != 200) {
-			shouldUseSharedSession = false;
-		}
-	};
+    // Check if user should use shared sesion
+    // This should ensure that the user doesn't invalidate the shared session
+    let mxhr = new XMLHttpRequest();
+    mxhr.onload = function () {
+        if (this.status != 200) {
+            shouldUseSharedSession = false;
+        }
+    };
+    mxhr.open("GET", apiUrl + "use_shared_session", true);
+    mxhr.send();    
 
-	winProductID = id;
-	prepareDownload(winProductID);
+    // Display the 'Please wait' text
+    msContent.style.display = "none";
+    processingError.style.display = "none";
+    download.style.display = "none";
+    pleaseWait.style.display = "block";
+
+    // Retrieve languages
+    winProductID = id;
+    getLanguages();
 }
