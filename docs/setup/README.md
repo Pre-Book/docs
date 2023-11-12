@@ -51,10 +51,7 @@ Extract this ZIP file somewhere (like your desktop) using your favorite archivin
 
 PreBook is **BYOM**, meaning you need to get your own ISO image of Windows 10 or 11 for your language.
 
-You can use the downloader below. Simply press one of the buttons to get started.
-
-!!! warning "Adblocker issues"
-    If this tool doesn't work, try disabling your ad or tracker blocker.
+To do this, you can use the downloader below. Simply press one of the download buttons to get started.
 
 **Based upon:** [Microsoft Software Download Listing](https://github.com/massgravel/msdl)
 
