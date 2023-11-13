@@ -1,6 +1,5 @@
 /* Taken from the AtlasOS docs: https://github.com/Atlas-OS/docs/blob/master/docs/stylesheets/msdl.css */
 
-
 :root {
     --md-dropdown-icon-dark: url('data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTcuNzE1IDguMjk1IDQuNTggNC41OCA0LjU5LTQuNTggMS40MSAxLjQxLTYgNi02LTZ6IiBmaWxsPSIjYmVjMWM2Ii8+PC9zdmc+');
     --md-dropdown-icon-light: url('data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTcuNzE1IDguMjk1IDQuNTggNC41OCA0LjU5LTQuNTggMS40MSAxLjQxLTYgNi02LTZ6IiBmaWxsPSIjMjEyMTIxIi8+PC9zdmc+Cg');
@@ -72,7 +71,7 @@ select {
     text-align-last: center;
     appearance: none;
     width: 100%;
-    margin-top: -0.9em;
+    margin-top: 0.25em;
 }
 
 option {
