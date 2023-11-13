@@ -12,7 +12,7 @@ description: Set up PreBook with AtlasOS.
 !!! danger "This also isn't finished!"
     Please be patient.
 
-## Download AtlasOS
+## :material-download: Download AtlasOS
 
 Head on over to the AtlasOS [download page](https://atlasos.net) and get the two files there.
 
@@ -26,11 +26,11 @@ Your preset folder should look something like this now:
 
 Now, we can actually apply our preset.
 
-## Using NTLite
+## :material-package-variant: Using NTLite
 
 Assuming you have NTLite installed, simply open it. You'll be shown a confusing window, so just follow this guide step-by-step.
 
-### Loading the ISO image
+### :material-disc: Loading the ISO image
 
 First, click `Add` on the top, then select `Image (ISO, WIM, ESD, SWM)` and browse for the Windows ISO you downloaded in the [:material-hammer-wrench: Setup section](../README.md#obtaining-an-iso).
 
@@ -49,7 +49,7 @@ Then, load the `Pro` edition from the edit cache:
 ![ntlite-3](../../assets/ntlite-3.png#only-dark)
 ![ntlite-3](../../assets/ntlite-3-light.png#only-light)
 
-### Loading the preset
+### :material-clipboard-text: Loading the preset
 
 Then, import our preset (the `.xml` file)
 
@@ -61,7 +61,7 @@ Now, right click our preset and choose `Load > Overwrite`.
 ![ntlite-5](../../assets/ntlite-5.png#only-dark)
 ![ntlite-5](../../assets/ntlite-5-light.png#only-light)
 
-### Applying registry tweaks
+### :material-screwdriver: Applying registry tweaks
 
 Head over to the `Registry` tab.
 
@@ -83,7 +83,7 @@ The Registry panel should look something like the picture below:
 ![ntlite-9](../../assets/ntlite-9.png#only-dark)
 ![ntlite-9](../../assets/ntlite-9-light.png#only-light)
 
-## Building our ISO
+## :material-account-hard-hat: Building our ISO
 
 Head on over to the `Apply` tab and look at the options.
 
@@ -127,7 +127,7 @@ This will take a while. After it's done, you will find an ISO file in the folder
 
 This is the ISO we're going to flash to our USB, keep it safe.
 
-## Flashing our ISO
+## :material-usb-flash-drive: Flashing our ISO to a USB drive
 
 === "Rufus"
     a
