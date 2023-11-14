@@ -85,6 +85,10 @@ nav:
         - AtlasOS: setup/playbooks/atlas.md
         - ReviOS: setup/playbooks/revi.md
         - Stock: setup/playbooks/stock.md
+  - Customization:
+      - Customization: customization/README.md
+      - Settings:
+        - Language: customization/language.md    
 
 
 repo_url: https://github.com/pre-book/docs
