@@ -1,7 +1,7 @@
 ---
 icon: material/trash-can
 title: Removed Features
-description: All features that are removed in PreBook.
+description: All features that are removed in PreBook by default.
 ---
 
 # :material-trash-can: Removed Features
