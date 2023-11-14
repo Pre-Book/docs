@@ -24,8 +24,6 @@ You can download the latest preset release at the links below.
 
 [:material-download: Download PreBook 10](https://github.com/Pre-Book/PreBook/releases/latest/download/PreBook10.zip){ .md-button } [:material-download: Download PreBook 11](https://github.com/Pre-Book/PreBook/releases/latest/download/PreBook11.zip){ .md-button }
 
-Once you're there, head to the **Assets** section and pick the version for your copy of Windows (`PreBook10` or `PreBook11`).
-
 You will get a ZIP file containing everything you'll need, which will look something like this:
 
 ![prebook-files-1](../assets/prebook-files-1.png#only-dark)
