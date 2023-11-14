@@ -20,9 +20,9 @@ description: How to use PreBook.
 
 ## :material-download: Obtaining our preset
 
-You can download the latest preset release at the link below.
+You can download the latest preset release at the links below.
 
-[:material-download: Download PreBook](https://github.com/Pre-Book/PreBook/releases/latest){ .md-button }
+[:material-download: Download PreBook 10](https://github.com/Pre-Book/PreBook/releases/latest/download/PreBook10.zip){ .md-button } [:material-download: Download PreBook 11](https://github.com/Pre-Book/PreBook/releases/latest/download/PreBook11.zip){ .md-button }
 
 Once you're there, head to the **Assets** section and pick the version for your copy of Windows (`PreBook10` or `PreBook11`).
 
