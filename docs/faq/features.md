@@ -79,7 +79,7 @@ description: All features that are removed in PreBook by default.
 
 ### :material-folder-wrench: ISO image changes
 
-- Support directory
+- Support directory removed
 
 ### :material-translate: Languages
 
@@ -165,7 +165,7 @@ description: All features that are removed in PreBook by default.
 
 ### :material-folder-wrench: ISO image changes
 
-- Support directory
+- Support directory removed
 
 ### :material-translate: Languages
 
