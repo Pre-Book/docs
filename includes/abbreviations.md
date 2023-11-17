@@ -8,7 +8,7 @@
 *[MBR]: Master Boot Record
 *[MPO]: Multi-Plane Overlay
 *[OOBE]: Out-of-box experience
-*[Playbook]: A .abpx file for the AME Wizard
+*[Playbook]: A .abpx file for the AME Wizard.
 <!-- *[playbook]: A .abpx file for the AME Wizard -->
 *[SDIO]: Snappy Driver Installer Origin
 *[SLUI]: Software License User Interface
@@ -18,10 +18,10 @@
 *[VBS]: Virtualization Based Security
 *[VRR]: Variable refresh rate
 *[WSL]: Windows Subsystem for Linux
-*[NTLite]: Tool for modifying WIM images and Windows editions inside install media
-*[Content Delivery Manager]: Responsible for the click-to-install shortcuts in the start menu and the Microsoft sponsored wallpapers in the lockscreen
-*[Support directory]: Contains the migration wizard in the ISO image. This does not influence the final installation product
+*[NTLite]: Tool for modifying WIM images and Windows editions inside install media.
+*[Content Delivery Manager]: Responsible for the click-to-install shortcuts in the start menu and the Microsoft sponsored wallpapers in the lockscreen.
+*[Support directory]: Contains the migration wizard in the ISO image. This does not influence the final installation product.
 *[BYOM]: Bring Your Own Media
-*[ISO]: A virtual disk, like a DVD in a file that can be burned to a disk or flashed to a USB
-*[Preset]: XML file that contains a premade configuration for NTLite
+*[ISO]: A virtual disk, like a DVD in a file that can be burned to a disk or flashed to a USB.
+*[Preset]: XML file that contains a premade configuration for NTLite.
 *[VM]: Virtual Machine
