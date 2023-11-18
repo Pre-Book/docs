@@ -45,7 +45,7 @@ theme:
       scheme: default
       primary: grey
       toggle:
-        icon: material/weather-sunny
+        icon: material/weather-night
 
         name: Switch to dark mode
 
@@ -55,7 +55,7 @@ theme:
       primary: black
       accent: indigo
       toggle:
-        icon: material/weather-night
+        icon: material/weather-sunny
         name: Switch to light mode
 extra:
   generator: false
