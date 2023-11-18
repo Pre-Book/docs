@@ -51,6 +51,15 @@ PreBook is **BYOM**, meaning you need to get your own ISO image of Windows 10 or
 
 To do this, you can use the downloader below. Simply press one of the download buttons to get started.
 
+!!! warning "UBlock Origin and similar tools"
+    One of the scripts used here is blocked by UBlock Origin. 
+    
+    Some exceptions have been made, we are not one of them. Do not report this to UBlock, [they know](https://github.com/uBlockOrigin/uAssets/issues/16440).
+
+    This was fixed for the AtlasOS docs and MSDL ([:material-github:Atlas docs PR](https://github.com/uBlockOrigin/uAssets/pull/20642)). 
+    
+    If you have such tools, this downloader will use a proxy. However, to avoid strain on said proxy, we recommend disabling your adblocker on this page temporarily (re-enable it once the download is done).
+
 **Based upon:** [Microsoft Software Download Listing](https://github.com/massgravel/msdl)
 
 **Taken from:** [AtlasOS Docs](https://github.com/Atlas-OS/docs/blob/master/docs/javascripts/msdl.js)
