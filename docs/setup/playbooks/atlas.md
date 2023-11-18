@@ -130,6 +130,6 @@ This is the ISO we're going to flash to our USB, keep it safe.
 ## :material-usb-flash-drive: Flashing our ISO to a USB drive
 
 === "Rufus"
-    a
+    Download Rufus from [rufus.ie](https://rufus.ie).
 === "Ventoy"
-    a
+    WIP
