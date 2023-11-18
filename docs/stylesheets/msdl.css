@@ -92,7 +92,7 @@ option {
     border: .1rem solid;
     border-color: currentcolor;
     border-radius: .1rem;
-    color: var(--md-primary-fg-color);
+    color: var(#0000);
     cursor: pointer;
     display: inline-block;
     font-weight: 700;
