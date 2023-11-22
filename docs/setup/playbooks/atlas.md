@@ -135,7 +135,9 @@ This is the ISO we're going to flash to our USB, keep it safe.
 Plug in your USB, and pick your flashing software of choice below:
 
 === "Rufus (recommended)"
-    Download Rufus from [rufus.ie](https://rufus.ie).
+    Download Rufus from [rufus.ie](https://rufus.ie). Get the normal x64 version, or the ARM64 version if you're currently using ARM64 Windows.
+
+    ![rufus-site](../../assets/rufus-site.png)
 
     Open `Rufus-<version>.exe` and ensure that the USB drive you plugged in is set at the top.
 
