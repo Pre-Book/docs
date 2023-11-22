@@ -129,7 +129,46 @@ This is the ISO we're going to flash to our USB, keep it safe.
 
 ## :material-usb-flash-drive: Flashing our ISO to a USB drive
 
-=== "Rufus"
+!!! danger "THIS WILL WIPE YOUR CHOSEN USB DEVICE!"
+    This will wipe the chosen USB drive and all files. Please be careful.
+
+Plug in your USB, and pick your flashing software of choice below:
+
+=== "Rufus (recommended)"
     Download Rufus from [rufus.ie](https://rufus.ie).
+
+    Open `Rufus-<version>.exe` and ensure that the USB drive you plugged in is set at the top.
+
+    Next to **Disc or ISO image** choose `SELECT`.
+
+    ![rufus-select](../../assets/rufus-select.png)
+
+    A file picker will open, select the ISO file you just created.
+
+    All options should be accessible now. Leave all settings as they are. To begin the process, hit `START`.
+
+    You will eventually come to a screen like this:
+
+    ![rufus-options-10](../../assets/rufus-options-10.png)
+
+    Select the following patches based on your version. 
+    
+    !!! warning "Bypassing Windows 11 requirements"
+        It's not recommended to bypass Windows 11's requirements as anticheats will still check if you meet them regardless.
+        
+    **:material-microsoft-windows: Windows 10:**
+
+    - Disable data collection
+    - Disable automatic BitLocker device encryption
+    
+    **:material-microsoft: Windows 11:** 
+
+    - Bypass requirements (Optional, not recommended)
+    - Bypass online Microsoft account requirement
+    - Disable data collection
+    - Disable automatic BitLocker device encryption
+
+    Then, press `OK` (and `OK` again at the warning) and wait for the flashing process to complete.
+
 === "Ventoy"
     WIP
