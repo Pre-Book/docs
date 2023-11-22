@@ -18,7 +18,7 @@ description: How to use PreBook.
 
     Please wait until we finish building it.
 
-## :material-download: Obtaining our preset
+## :material-download: Getting our preset
 
 You can download the latest preset release at the links below:
 
@@ -41,11 +41,11 @@ You will get a ZIP file containing everything you'll need, which will look somet
 2.  This file forces the edition picker, more on that later.
 3.  The preset itself. Named PreBook10 or PreBook11.
 
-Extract this ZIP file somewhere (like your desktop) using your favorite archiving tool (like [7-zip](https://7-zip.org)). Keep it safe for now, we'll need it later.
+Extract this ZIP file into a new folder called **`PreBook`** somewhere (like your desktop) using your favorite archiving tool (like [7-zip](https://7-zip.org)). Keep it safe for now, we'll need it later.
 
 ![prebook-desktop](../assets/prebook-desktop.png)
 
-## :material-disc: Obtaining an ISO
+## :material-disc: Getting an ISO
 
 PreBook is **BYOM**, meaning you need to get your own ISO image of Windows 10 or 11 for your language.
 

@@ -168,7 +168,9 @@ Plug in your USB, and pick your flashing software of choice below:
     - Disable data collection
     - Disable automatic BitLocker device encryption
 
-    Then, press `OK` (and `OK` again at the warning) and wait for the flashing process to complete.
+    Then, press `OK` (and `OK` again at the warning) and wait for the flashing process to complete. Once it completes, you can close the program.
 
 === "Ventoy"
     WIP
+
+Now that the flashing process is complete, take your **`PreBook`** folder and copy it to your USB drive (drag and drop).
