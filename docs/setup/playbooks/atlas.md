@@ -173,7 +173,7 @@ Plug in your USB, and pick your flashing software of choice below:
     Then, press `OK` (and `OK` again at the warning) and wait for the flashing process to complete. Once it completes, you can close the program.
 
 === "Ventoy"
-    !!! warning "This is unfinished and potentially incorrect"
+    !!! warning "This is unfinished and potentially incorrect!"
     
     First, download Ventoy from [ventoy.net](https://ventoy.net/download.html) and extract it somewhere. In the Ventoy folder, run `Ventoy2Disk.exe`.
 
