@@ -83,6 +83,9 @@ The Registry panel should look something like the picture below:
 ![ntlite-9](../../assets/ntlite-9.png#only-dark)
 ![ntlite-9](../../assets/ntlite-9-light.png#only-light)
 
+!!! info "Want to change something?"
+    Consult the [:material-palette: Customization](../../customization/README.md) section and change anything that you wish to change.
+
 ## :material-account-hard-hat: Building our ISO
 
 Head on over to the `Apply` tab and look at the options.
