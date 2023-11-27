@@ -8,7 +8,7 @@ description: All features that are removed in PreBook by default.
 
 !!! question "Use another language or edition?"
 
-    This list is fully customizable to suit your needs! These are just the defaults. You can customize then in NTLite after loading the preset.
+    This list is [fully customizable](../customization/README.md) to suit your needs! These are just the defaults. You can customize then in NTLite after loading the preset.
 
 
 ## :material-microsoft-windows: Windows 10
