@@ -2,6 +2,7 @@
 public/
 site/
 .cache/
+.env
 
 # Mac users 🤮
 .DS_Store
