@@ -16,6 +16,7 @@ theme:
     - search.highlight
     - search.share
     - content.tooltips
+    - content.tabs.link
     - content.action.edit
     - content.action.view
     - content.code.copy
@@ -119,6 +120,10 @@ markdown_extensions:
   - tables
   - pymdownx.tabbed:
       alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+
   - pymdownx.snippets:
       auto_append:
         - includes/abbreviations.md
