@@ -9,6 +9,7 @@ mkdocs-glightbox = "*"
 mkdocs-awesome-pages-plugin = "*"
 mkdocs-git-committers-plugin-2 = "*"
 pillow = "*"
+cairosvg = "*"
 
 [dev-packages]
 
