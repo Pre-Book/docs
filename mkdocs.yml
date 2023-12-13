@@ -21,6 +21,7 @@ theme:
     - content.code.copy
     - content.code.annotate
     - content.tabs.link
+    - content.tooltips
     - navigation.prune
   icon:
     edit: material/file-edit
@@ -138,6 +139,10 @@ markdown_extensions:
 plugins:
   - search
   - social
+  - privacy
+  - git-committers:
+      repository: pre-book/docs
+      branch: main
   - glightbox:
       touchNavigation: true
       loop: false

@@ -33,11 +33,47 @@ glightbox: false
 
 ## Links
 
-<div style="text-align:center;" markdown>
+<div class="grid cards" markdown>
+
+-   :material-download:{ .lg .middle } __Install PreBook__
+
+    ---
+
+    Download NTLite and start creating your custom ISO in minutes.
+
+    [:octicons-arrow-right-24: Get started](setup/README.md)
+
+-   :material-palette:{ .lg .middle } __Configure it your way__
+
+    ---
+
+    Customize your PreBook setup to include what you want.
+
+    [:octicons-arrow-right-24: Reference](customization/README.md)
+
+-   :material-chat-question:{ .lg .middle } __Have questions?__
+
+    ---
+
+    Feel free to visit our FAQ and [removed features list](faq/features.md).
+
+    [:octicons-arrow-right-24: Go there](faq/README.md)
+
+-   :material-scale-balance:{ .lg .middle } __Open Source__
+
+    ---
+
+    PreBook is licensed under the GNU GPL v3 (or later) and available on [:material-github: GitHub](https://github.com/pre-book/prebook).
+
+    [:octicons-arrow-right-24: License](https://github.com/Pre-Book/PreBook/blob/main/LICENSE)
+
+</div>
+
+<!--div style="text-align:center;" markdown>
 
 [:material-download: Download](https://github.com/Pre-Book/PreBook/releases/latest){ .md-button } [:material-information-outline: FAQ](faq/README.md){ .md-button } [:material-hammer-wrench: Setup](setup/README.md){ .md-button } [:material-github: Source Code](https://github.com/pre-book/prebook){ .md-button }
 
-</div>
+</div-->
 
 ## Authors
 
