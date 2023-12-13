@@ -139,7 +139,8 @@ markdown_extensions:
 plugins:
   - search
   - social
-  - privacy
+  - privacy:
+      enabled: !ENV [CI, false]
   - git-committers:
       repository: pre-book/docs
       branch: main
