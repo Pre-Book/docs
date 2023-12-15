@@ -166,10 +166,38 @@ This will affect what additional tweaks need to be done.
     
     These playbooks use the AME Wizard, but AME's own playbook for it should be avoided.
 
-[:atlas-atlas: AtlasOS](playbooks/atlas.md){ .md-button } [:revi-revi: ReviOS](playbooks/revi.md){ .md-button } [:material-microsoft-windows:{ .windows } None (stock)](playbooks/stock.md){ .md-button }
+<div class="grid cards" markdown>
+
+-   :atlas-atlas:{ .lg .middle } [__AtlasOS__](https://atlasos.net)
+
+    ---
+
+    Windows redesigned for gaming (strips more).
+
+    [:octicons-arrow-right-24: Choose this playbook](./playbooks/atlas.md)
+
+-   :revi-revi:{ .lg .middle } [__ReviOS__](https://revi.cc)
+
+    ---
+
+    Windows as it should be: private, preformant and secure (strips less).
+
+    [:octicons-arrow-right-24: Choose this playbook](./playbooks/revi.md)
+
+-   :material-microsoft-windows:{ .lg .middle .windows } __Stock__
+
+    ---
+
+    Normal Windows, just with annoying preinstalled stuff removed.
+
+    [:octicons-arrow-right-24: Choose no playbook](./playbooks/stock.md)
+
+</div>
+
+<!-- [:atlas-atlas: AtlasOS](playbooks/atlas.md){ .md-button } [:revi-revi: ReviOS](playbooks/revi.md){ .md-button } [:material-microsoft-windows:{ .windows } None (stock)](playbooks/stock.md){ .md-button } -->
 
 -----
 
 *AtlasOS branding copyright &copy; [Jack Holmes](https://jackholmes.zip) & [AtlasOS](https://atlasos.net) 2023.*  
 
-*ReviOS branding copyright &copy; [Revision](https://revi.cc) 2019 - 2023.* 
+*ReviOS branding copyright &copy; [Revision](https://revi.cc) & [Stasium](https://stasium.dev/) 2019 - 2023.*
