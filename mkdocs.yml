@@ -149,6 +149,7 @@ plugins:
   - git-committers:
       repository: pre-book/docs
       branch: main
+      enabled: !ENV [CI, false]
   - glightbox:
       touchNavigation: true
       loop: false
