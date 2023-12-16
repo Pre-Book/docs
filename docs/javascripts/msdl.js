@@ -143,8 +143,8 @@ function onLanguageXhrChange() {
 
     if (prodLang) {
         let options = prodLang.options;
-        let emptyRemoved = false;
-        let englishSet = false;
+        let emptyRemoved;
+        let englishSet;
 
         for (let i = options.length - 1; i >= 0; i--) {
             let option = options[i];
@@ -188,7 +188,7 @@ function getLanguages(sharedSession = false) {
     xhr.onload = onLanguageXhrChange;
     xhr.onerror = function() {
         getLangError(false);
-    };    
+    };
     xhr.open("GET", `${langsUrl}&productEditionId=${winProductID}&sessionId=${sharedSession ? sharedSessionGUID : sessionId.value}`, true);
     xhr.send();
 }
@@ -219,7 +219,7 @@ function getWindows(id) {
         if (this.status != 200) shouldUseSharedSession = false;
     };
     mxhr.open("GET", apiUrl + "use_shared_session", true);
-    mxhr.send();    
+    mxhr.send();
 
     // Display the 'Please wait' text
     msContent.style.display = "none";
