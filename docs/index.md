@@ -59,7 +59,7 @@ glightbox: false
 
     [:octicons-arrow-right-24: Go there](faq/README.md)
 
--   :material-scale-balance:{ .lg .middle } __Open Source__
+-   :material-scale-balance:{ .lg .middle } __We're Open Source!__
 
     ---
 
