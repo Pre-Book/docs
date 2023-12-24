@@ -65,10 +65,6 @@ To do this, you can use the downloader below. Simply press one of the download b
     
     If you have such tools, this downloader will use a proxy. However, to avoid strain on said proxy, we recommend disabling your adblocker on this page temporarily (re-enable it once the download is done).
 
-**Based upon:** [Microsoft Software Download Listing](https://github.com/massgravel/msdl)
-
-**Taken from:** [AtlasOS Docs](https://github.com/Atlas-OS/docs/blob/master/docs/javascripts/msdl.js)
-
 
 <br><br>
 
@@ -107,7 +103,7 @@ To do this, you can use the downloader below. Simply press one of the download b
 <input id="msdl-session-id" type="hidden">
 </center>
 
-:simple-github: **Downloader based upon:** [Microsoft Software Download Listing](https://github.com/massgravel/msdl) and **made by** [he3als](https://he3als.xyz) and the AtlasOS docs contributors.
+:simple-github: **Downloader based upon:** [Microsoft Software Download Listing](https://github.com/massgravel/msdl) and **made by** [he3als](https://he3als.xyz) and the AtlasOS docs contributors ([source](https://github.com/Atlas-OS/docs/blob/master/docs/javascripts/msdl.js)).
 
 
 
