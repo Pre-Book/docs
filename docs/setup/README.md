@@ -85,7 +85,7 @@ To do this, you can use the downloader below. Simply press one of the download b
 
 <center class="centerMsdl">
 <div class="msdl-button-container">
-    <button class="msdl-button" style="margin-right: 2px" onclick="getWindows(2860);">Download Windows 11 x64</button>
+    <button class="msdl-button" style="margin-right: 2px" onclick="getWindows(2935);">Download Windows 11 x64</button>
     <button class="msdl-button" style="margin-left: 2px" onclick="getWindows(2618);">Download Windows 10 x64</button>
 </div>
 
@@ -107,6 +107,11 @@ To do this, you can use the downloader below. Simply press one of the download b
 <input id="msdl-session-id" type="hidden">
 </center>
 
+:simple-github: **Downloader based upon:** [Microsoft Software Download Listing](https://github.com/massgravel/msdl) and **made by** [he3als](https://he3als.xyz) and the AtlasOS docs contributors.
+
+
+
+
 ??? note "Alternatives"
     === "Windows Media Creation Tool"
         !!! failure "Windows 11"
@@ -114,22 +119,23 @@ To do this, you can use the downloader below. Simply press one of the download b
 
             The current Media Creation Tool for Windows 11 only creates 22H2 media, so the Windows 11 Media Creation Tool currently can't be used for Prebook.
 
-        1. Download the [Windows 10](https://go.microsoft.com/fwlink/?LinkId=691209) Media Creation Tool and open it.
-        2. Click the `Accept` button to agree to the Microsoft license terms.
-        3. Tick `Create installation media (USB flash drive, DVD, or ISO file) for another PC`, click `Next`, and choose:
-            * Language: **Desired language**
-            * Edition: **Windows 10**
-            * Architecture: **64-bit (x64)**
-        4. Choose the `ISO file` option and choose the download location.
-        5. After the ISO has finished downloading, click `Finish` to close the tool.
-        *Taken from the AtlasOS Docs. Credit to all AtlasOS contributors.*
+        1. Download the [Windows 10](https://go.microsoft.com/fwlink/?LinkId=691209) or [Windows 11](https://go.microsoft.com/fwlink/?linkid=2156295) Media Creation Tool and open it
+        2. Click the **Accept** button to agree to the Microsoft license terms
+        3. Select **Create installation media (USB flash drive, DVD, or ISO file) for another PC**, click **Next**, and choose:
+            - **Language:** Desired language
+            - **Edition:** Windows 10 or 11
+            - **Architecture (Windows 10 only):** 64-bit (x64)
+        4. Select the **ISO file** option and choose the download location
+        5. After the ISO has completed downloading, click **Finish**
+        
+        *&copy; Atlas Docs contributors, licensed under CC-BY-SA 4.0*
     === "MSDL website"
         Visit the [MSDL website](https://massgrave.dev/msdl), and download your Windows ISO from there.
 
         When choosing the ISO download link at the end, make sure to pick `IsoX64 Download`.
 
         [:material-microsoft-windows: Download Windows 10](https://massgrave.dev/msdl/#2618){ .md-button }
-        [:material-microsoft: Download Windows 11](https://massgrave.dev/msdl/#2860){ .md-button }
+        [:material-microsoft: Download Windows 11](https://massgrave.dev/msdl/#2935){ .md-button }
 
 ## :material-package-variant: Installing NTLite
 
