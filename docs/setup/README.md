@@ -63,7 +63,7 @@ To do this, you can use the downloader below. Simply press one of the download b
 
     This was fixed for the AtlasOS docs and MSDL ([:material-github:Atlas docs PR](https://github.com/uBlockOrigin/uAssets/pull/20642)). 
     
-    If you have such tools, this downloader will use a proxy. However, to avoid strain on said proxy, we recommend disabling your adblocker on this page temporarily (re-enable it once the download is done).
+    If you have such tools, this downloader will use a proxy. However, to avoid strain on said proxy, we recommend disabling your adblocker on this page temporarily (re-enable it once the download is done) (the only tracker on this page is Cloudflare Analytics).
 
 
 <br><br>
@@ -111,7 +111,7 @@ To do this, you can use the downloader below. Simply press one of the download b
 ??? note "Alternatives"
     === "Windows Media Creation Tool"
         !!! failure "Windows 11"
-            AME playbooks only support Windows 10 22H2 and Windows 11 23H2.
+            AME playbooks only support Windows 10 22H2 and Windows 11 23H2 (though ReviOS supports 11 22H2).
 
             The current Media Creation Tool for Windows 11 only creates 22H2 media, so the Windows 11 Media Creation Tool currently can't be used for Prebook.
 

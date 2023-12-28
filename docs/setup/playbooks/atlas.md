@@ -176,12 +176,16 @@ Plug in your USB, and pick your flashing software of choice below:
     Then, press `OK` (and `OK` again at the warning) and wait for the flashing process to complete. Once it completes, you can close the program.
 
 === "Ventoy"
-    !!! warning "This is unfinished and potentially incorrect!"
-    
     First, download Ventoy from [ventoy.net](https://ventoy.net/download.html) and extract it somewhere. In the Ventoy folder, run `Ventoy2Disk.exe`.
 
-    In `Ventoy2Disk`, select your USB drive, then at the top, enable `Secure Boot Support`.
+    In `Ventoy2Disk`, select your USB drive, then at the top, click `Option` and enable `Secure Boot Support`.
+
+    ![vtoy_sb](../../assets/vtoy_sb.png)
 
     Click `Install`.
 
+    Once it's done copy (drag and drop) your fresh PreBook ISO to the root of the drive labelled `Ventoy`.
+
 Now that the flashing process is complete, take your **`PreBook`** folder and copy it to your USB drive (drag and drop).
+
+
