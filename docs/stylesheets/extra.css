@@ -1,3 +1,24 @@
 .windows {
-    color: #0078D6;
+    color: #0078d6;
+}
+
+:root {
+    --md-admonition-icon--win: url('data: image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>microsoft-windows</title><path d="M3,12V6.75L9,5.43V11.91L3,12M20,3V11.75L10,11.9V5.21L20,3M3,13L9,13.09V19.9L3,18.75V13M20,13.25V22L10,20.09V13.1L20,13.25Z" /></svg>')
+}
+
+.md-typeset .admonition.win,
+.md-typeset details.win {
+    border-color: rgb(0, 120, 214);
+}
+
+.md-typeset .win>.admonition-title,
+.md-typeset .win>summary {
+    background-color: rgb(30, 33, 41);
+}
+
+.md-typeset .win>.admonition-title::before,
+.md-typeset .win>summary::before {
+    background-color: rgb(0, 120, 214);
+    -webkit-mask-image: var(--md-admonition-icon--win);
+    mask-image: var(--md-admonition-icon--win);
 }
