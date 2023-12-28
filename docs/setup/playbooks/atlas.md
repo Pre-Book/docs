@@ -199,4 +199,4 @@ Now that the flashing process is complete, take your **`PreBook`** folder and co
     5. Click on the name of your USB drive or **EFI USB Device**.
 === "Method 2: One-time boot menu"
     !!! info "This method works on any Windows (even custom) or Linux PC."
-    1. Find your boot settings key. This can be found through a simple [google search](../../gsearch.md) or via your PC or motherboard's manual.
+    1. Find your boot settings key. This can be found through a simple [google search](../../boot-key.md) or via your PC or motherboard's manual.
