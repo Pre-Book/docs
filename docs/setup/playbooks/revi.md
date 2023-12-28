@@ -1,7 +1,8 @@
 ---
-icon: material/cogs
+icon: revi/small
 description: How to set up PreBook with ReviOS.
 ---
 
-# :material-cogs: ReviOS
+# :revi-revi: ReviOS
 
+ab

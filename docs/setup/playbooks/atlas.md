@@ -1,10 +1,10 @@
 ---
-icon: material/controller
+icon: atlas/small
 title: AtlasOS
 description: Set up PreBook with AtlasOS.
 ---
 
-# :material-controller: AtlasOS
+# :atlas-atlas: AtlasOS
 
 !!! warning "The Atlas team will not provide support!"
     The AtlasOS support team will not provide support if you use PreBook with the Atlas playbook, please seek support from us instead.
@@ -188,4 +188,15 @@ Plug in your USB, and pick your flashing software of choice below:
 
 Now that the flashing process is complete, take your **`PreBook`** folder and copy it to your USB drive (drag and drop).
 
+## :material-power: Boot off of our USB
 
+=== "Method 1: Windows Boot Settings"
+    !!! info "This method only works on Windows."
+    1. Open the `Run` dialog by pressing ++win+r++
+    2. Type `shutdown /r /t 1 /o` and press ++enter++
+    3. Your computer will reboot into a screen that says **Choose an Option**.
+    4. Click **Use a Device**.
+    5. Click on the name of your USB drive or **EFI USB Device**.
+=== "Method 2: One-time boot menu"
+    !!! info "This method works on any Windows (even custom) or Linux PC."
+    1. Find your boot settings key. This can be found through a simple [google search](../../gsearch.md) or via your PC or motherboard's manual.

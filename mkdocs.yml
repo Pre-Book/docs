@@ -42,23 +42,10 @@ theme:
       example: octicons/beaker-16
       quote: octicons/quote-16
   palette:
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: black
-      toggle:
-        icon: material/weather-night
-
-        name: Switch to dark mode
-
     # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
       accent: indigo
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to light mode
 extra:
   generator: false
   social:
@@ -77,6 +64,7 @@ nav:
   - Home:
       - Home: index.md
       - Branding: branding.md
+      - Boot Menu Key: gsearch.md
   - FAQ:
       - FAQ: faq/README.md
       - Details:  
