@@ -203,3 +203,5 @@ Now that the flashing process is complete, take your **`PreBook`** folder and co
     3. You should see a device list, pick your USB device.
 
 Wait for the Windows installer to load.
+
+Once you're in the Windows installer, set both language and region boxes to **English (United States)** (unless you've included other locales)
