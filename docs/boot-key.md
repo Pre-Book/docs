@@ -25,6 +25,7 @@ Use the form below to find the correct key to press to access your boot menu. Lo
     }
     </script>
 !!! info "Form Example"
+    Full PC model name: **Dell Inspiron 3646**
 
     Do not put the manufacturer's name in the model name.
     ![key-form](assets/key-form.png)
