@@ -191,6 +191,7 @@ Now that the flashing process is complete, take your **`PreBook`** folder and co
 ## :material-power: Boot off of our USB
 
 === "Method 1: Windows Boot Settings"
+    <!-- Custom Admonition, see stylesheets/extra.css -->
     !!! win "This method only works on Windows."
     1. Open the `Run` dialog by pressing ++win+r++
     2. Type `shutdown /r /t 1 /o` and press ++enter++
