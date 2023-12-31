@@ -108,7 +108,7 @@ To do this, you can use the downloader below. Simply press one of the download b
 
 
 
-??? note "Alternatives"
+??? tip "Alternatives"
     === "Windows Media Creation Tool"
         !!! failure "Windows 11"
             AME playbooks only support Windows 10 22H2 and Windows 11 23H2 (though ReviOS supports 11 22H2).
