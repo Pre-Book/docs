@@ -3,8 +3,9 @@ public/
 site/
 .cache/
 .env
+Pipfile.lock
 
-# Mac users 🤮
+# Mac users
 .DS_Store
 .AppleDouble
 .LSOverride
