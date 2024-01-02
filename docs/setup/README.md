@@ -23,6 +23,25 @@ description: How to use PreBook.
 
     Please wait until we finish building it.
 
+## :material-clipboard-pulse: Preparing your system
+
+!!! danger "This will wipe your Windows!"
+    Please make backups of your important files first. You can store these backups on **external drives**, **cloud storage websites**, **network servers**, or your **installation drive** (after flashing PreBook to it).
+
+First, open **File Explorer** and go to **This PC**. Then, right click your C: drive and choose **Rename**.
+
+=== "**:material-microsoft: Windows 11**"
+
+    ![rename-drive](../assets/rename-drive.png)
+
+=== "**:material-microsoft-windows: Windows 10**"
+
+    Right click your C: drive and click here:
+
+    ![rename-drive-10](../assets/rename-drive-10.png)
+
+Type in **OS** or **Windows** to relabel your C: drive. This will be important later on.
+
 ## :material-download: Getting our preset
 
 You can download the latest preset release at the links below:

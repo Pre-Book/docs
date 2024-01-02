@@ -205,4 +205,13 @@ Now that the flashing process is complete, take your **`PreBook`** folder and co
 
 Wait for the Windows installer to load.
 
-Once you're in the Windows installer, set both language and region boxes to **English (United States)** (unless you've included other locales)
+Once you're in the Windows installer, set both language and region boxes to **English (United States)** (unless you've included other locales).
+
+You shouldn't be asked to pick a Windows edition, as PreBook only has one. If asked for a product key, choose **I don't have a product key** at the bottom.
+
+Continue through install as normal, at this screen, pick **Custom**.
+
+> image missing
+
+Eventually you'll see a list of disks, and be asked to choose one.
+

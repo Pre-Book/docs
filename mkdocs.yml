@@ -69,6 +69,8 @@ nav:
       - FAQ: faq/README.md
       - Details:  
         - Removed Features: faq/features.md
+      - Troubleshooting:
+        - GPT Disk Conversion: faq/questions/gpt-disk.md
   - Setup:
       - Setup: setup/README.md
       - Playbooks:
