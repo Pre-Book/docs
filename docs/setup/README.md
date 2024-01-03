@@ -73,7 +73,7 @@ Extract this ZIP file into a new folder called **`PreBook`** somewhere (like you
 
 PreBook is **BYOM**, meaning you need to get your own ISO image of Windows 10 or 11 for your language.
 
-To do this, you can use the downloader below. Simply press one of the download buttons to get started.
+<span class="noJs">To do this, you can use the downloader below. Simply press one of the download buttons to get started.</span>
 
 !!! warning "UBlock Origin and similar tools"
     One of the scripts used here is blocked by UBlock Origin. 
@@ -87,6 +87,12 @@ To do this, you can use the downloader below. Simply press one of the download b
 
 <br><br>
 
+<noscript>
+<b>The documentation's Windows ISO downloader doesn't show for you due to the documentation being loaded without JavaScript.</b>
+See the alternatives below.
+</noscript>
+<br>
+
 <!--
     This is based upon the Microsoft Software Download Listing website by massgravel on GitHub.
 -->
@@ -98,7 +104,7 @@ To do this, you can use the downloader below. Simply press one of the download b
     This was taken from the AtlasOS docs. See the JavaScript: https://raw.githubusercontent.com/Atlas-OS/docs/master/docs/javascripts/msdl.js
 -->
 
-<center class="centerMsdl">
+<center class="noJS centerMsdl">
 <div class="msdl-button-container">
     <button class="msdl-button" style="margin-right: 2px" onclick="getWindows(2935);">Download Windows 11 x64</button>
     <button class="msdl-button" style="margin-left: 2px" onclick="getWindows(2618);">Download Windows 10 x64</button>
@@ -124,7 +130,11 @@ To do this, you can use the downloader below. Simply press one of the download b
 
 :simple-github: **Downloader based upon:** [Microsoft Software Download Listing](https://github.com/massgravel/msdl) and **made by** [he3als](https://he3als.xyz) and the AtlasOS docs contributors ([source](https://github.com/Atlas-OS/docs/blob/master/docs/javascripts/msdl.js)).
 
-
+<script>
+    var styleSheet = document.createElement("style")
+    styleSheet.innerText = '.noJs { display: revert !important }'
+    document.head.appendChild(styleSheet)
+</script>
 
 
 ??? tip "Alternatives"
