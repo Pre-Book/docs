@@ -222,6 +222,9 @@ Continue through install as normal, at this screen, pick **Custom**.
 
 Eventually you'll see a list of disks, and be asked to choose one.
 
+!!! danger "THIS WILL WIPE YOUR DISK!"
+    Ensure your data is backed up somewhere safe.
+
 Select the partition labelled **OS** and click **Delete**. Repeat this process for any partitions of **Type** `System`, `MSR (Reserved)`, or `Recovery`.
 
 
