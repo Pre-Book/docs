@@ -222,3 +222,4 @@ Select the partition labelled **OS** and click **Delete**. Repeat this process f
 ![revi-partition](../../assets/revi-partition.png)
 *Image Credit: ReviOS Documentation contributors*
 
+From here on out, it's pretty self-explanatory. Just follow Windows setup as normal.
