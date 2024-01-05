@@ -159,7 +159,11 @@ Plug in your USB, and pick your flashing software of choice below:
 
     Then, press `OK` (and `OK` again at the warning) and wait for the flashing process to complete. Once it completes, you can close the program.
 
+   
+
 === "Ventoy"
+    !!! failure ""
+        You will not be able to use the `ei.cfg` fix (prevents Windows from forcing a specific edition based on your OEM's settings) if you use Ventoy.
     First, download Ventoy from [ventoy.net](https://ventoy.net/download.html) and extract it somewhere. In the Ventoy folder, run `Ventoy2Disk.exe`.
 
     In `Ventoy2Disk`, select your USB drive, then at the top, click `Option` and enable `Secure Boot Support`.
@@ -170,7 +174,8 @@ Plug in your USB, and pick your flashing software of choice below:
 
     Once it's done copy (drag and drop) your fresh PreBook ISO to the root of the drive labelled `Ventoy`.
 
-Now that the flashing process is complete, take your **`PreBook`** folder and copy it to your USB drive (drag and drop).
+!!! success ""
+    **The flashing process is complete**, take your **`PreBook`** folder and copy it to your USB drive (drag and drop).
 
 ## :material-power: Boot off of our USB
 
@@ -190,7 +195,7 @@ Now that the flashing process is complete, take your **`PreBook`** folder and co
 ----
 Once booted into your USB, wait for the Windows installer to load.
 
-!!! warning "Ensure you are not connected to the Internet."
+!!! warning "Ensure you are **not** connected to the Internet."
 
 ### :material-microsoft-windows: Installing Windows
 
