@@ -199,15 +199,22 @@ Now that the flashing process is complete, take your **`PreBook`** folder and co
     4. Click **Use a Device**.
     5. Click on the name of your USB drive or **EFI USB Device**.
 === "Method 2: One-time boot menu"
+    !!! info "This varies by manufacturer."
     1. Find your boot settings key. This can be found through a simple [search](../../boot-key.md) or via your PC or motherboard's manual.
     2. Spam this key while turning on your PC and having the USB plugged in.
     3. You should see a device list, pick your USB device.
+----
+Once booted into your USB, wait for the Windows installer to load.
 
-Wait for the Windows installer to load.
+!!! info "Ensure you are not connected to the internet."
 
 Once you're in the Windows installer, set both language and region boxes to **English (United States)** (unless you've included other locales).
 
+> image missing
+
 You shouldn't be asked to pick a Windows edition, as PreBook only has one. If asked for a product key, choose **I don't have a product key** at the bottom.
+
+> image missing
 
 Continue through install as normal, at this screen, pick **Custom**.
 
@@ -215,3 +222,18 @@ Continue through install as normal, at this screen, pick **Custom**.
 
 Eventually you'll see a list of disks, and be asked to choose one.
 
+Select the partition labelled **OS** and click **Delete**. Repeat this process for any partitions of **Type** `System`, `MSR (Reserved)`, or `Recovery`.
+
+
+
+<!-- Taken from ReviOS docs. -->
+![revi-partition](../../assets/revi-partition.png)
+
+!!! warning "Do not connect to the internet until the AtlasOS docs tell you to."
+
+The installation will start and your PC will reboot. From here, please follow Atlas's [installation guide](https://docs.atlasos.net/getting-started/installation/#initial-setup-oobe). 
+
+!!! info ""
+    The playbook files should be on your install USB, ignore anything referring to "your old Windows install".
+
+[Install AtlasOS :material-arrow-right:](https://docs.atlasos.net/getting-started/installation/#initial-setup-oobe){ .md-button .md-button--primary }
