@@ -206,19 +206,21 @@ Now that the flashing process is complete, take your **`PreBook`** folder and co
 ----
 Once booted into your USB, wait for the Windows installer to load.
 
-!!! info "Ensure you are not connected to the internet."
+!!! warning "Ensure you are not connected to the Internet."
+
+### :material-microsoft-windows: Installing Windows
 
 Once you're in the Windows installer, set both language and region boxes to **English (United States)** (unless you've included other locales).
 
-> image missing
+![winsetup-1](../../assets/winsetup-1.png)
 
 You shouldn't be asked to pick a Windows edition, as PreBook only has one. If asked for a product key, choose **I don't have a product key** at the bottom.
 
-> image missing
+![winsetup-2](../../assets/winsetup-2.png)
 
 Continue through install as normal, at this screen, pick **Custom**.
 
-> image missing
+![winsetup-3](../../assets/winsetup-3.png)
 
 Eventually you'll see a list of disks, and be asked to choose one.
 
@@ -228,9 +230,9 @@ Eventually you'll see a list of disks, and be asked to choose one.
 Select the partition labelled **OS** and click **Delete**. Repeat this process for any partitions of **Type** `System`, `MSR (Reserved)`, or `Recovery`.
 
 
-
-<!-- Taken from ReviOS docs. -->
 ![revi-partition](../../assets/revi-partition.png)
+*Image Credit: ReviOS Documentation contributors*
+
 
 !!! warning "Do not connect to the internet until the AtlasOS docs tell you to."
 
@@ -239,4 +241,4 @@ The installation will start and your PC will reboot. From here, please follow At
 !!! info ""
     The playbook files should be on your install USB, ignore anything referring to "your old Windows install".
 
-[Install AtlasOS :material-arrow-right:](https://docs.atlasos.net/getting-started/installation/#initial-setup-oobe){ .md-button .md-button--primary }
+[:atlas-atlas: Install AtlasOS :material-arrow-right:](https://docs.atlasos.net/getting-started/installation/#initial-setup-oobe){ .md-button .md-button--primary }
