@@ -9,8 +9,6 @@ description: Set up PreBook with AtlasOS.
 !!! warning "The Atlas team will not provide support!"
     The AtlasOS support team will not provide support if you use PreBook with the Atlas playbook, please seek support from us instead.
 
-!!! danger "This also isn't finished!"
-    Please be patient.
 
 ## :material-download: Download AtlasOS
 
@@ -160,6 +158,8 @@ Plug in your USB, and pick your flashing software of choice below:
     
     !!! warning "Bypassing Windows 11 requirements"
         It's not recommended to bypass Windows 11's requirements as anticheats will still check if you meet them regardless.
+
+        If you do not meet the requirements, please use **:material-microsoft-windows: Windows 10**.
         
     **:material-microsoft-windows: Windows 10:**
 
@@ -206,7 +206,7 @@ Now that the flashing process is complete, take your **`PreBook`** folder and co
 ----
 Once booted into your USB, wait for the Windows installer to load.
 
-!!! warning "Ensure you are not connected to the Internet."
+!!! warning "Ensure you are **not** connected to the Internet."
 
 ### :material-microsoft-windows: Installing Windows
 

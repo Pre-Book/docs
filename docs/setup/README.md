@@ -19,9 +19,6 @@ description: How to use PreBook.
 - :material-lightning-bolt: [Rufus](https://rufus.ie "Bootable USB creator for Windows") or [Ventoy](https://www.ventoy.net "Multiple ISOs on one USB stick!")
 - :material-download: Our preset
 
-!!! danger "This section is not finished!"
-
-    Please wait until we finish building it.
 
 ## :material-clipboard-pulse: Preparing your system
 
@@ -84,15 +81,22 @@ PreBook is **BYOM**, meaning you need to get your own ISO image of Windows 10 or
     
     If you have such tools, this downloader will use a proxy. However, to avoid strain on said proxy, we recommend disabling your adblocker on this page temporarily (re-enable it once the download is done) (the only tracker on this page is Cloudflare Analytics).
 
+??? danger "Bypassing Windows 11 Requrements"
+    It's not recommended to bypass Windows 11's requirements as anticheats will still check if you meet them regardless. 
 
-<br><br>
-
+    If you do not meet the requirements, please use **:material-microsoft-windows: Windows 10**.
+    
+    If you would like to bypass anyway, please use Rufus when [flashing your USB](./playbooks/stock.md#flashing-our-iso-to-a-usb-drive), or consult the Internet for a guide.
+--------
+<br>
 <noscript>
 <b>The documentation's Windows ISO downloader doesn't show for you due to the documentation being loaded without JavaScript.</b>
 See the alternatives below.
 </noscript>
 <br>
-
+<div align="center">
+    <b>Choose your Windows:</b>
+</div>
 <!--
     This is based upon the Microsoft Software Download Listing website by massgravel on GitHub.
 -->
@@ -136,8 +140,7 @@ See the alternatives below.
     document.head.appendChild(styleSheet)
 </script>
 
-
-??? tip "Alternatives"
+??? note "Alternatives"
     === "Windows Media Creation Tool"
         !!! failure "Windows 11"
             AME playbooks only support Windows 10 22H2 and Windows 11 23H2 (though ReviOS supports 11 22H2).
@@ -153,7 +156,7 @@ See the alternatives below.
         4. Select the **ISO file** option and choose the download location
         5. After the ISO has completed downloading, click **Finish**
         
-        *&copy; Atlas Docs contributors, licensed under CC-BY-SA 4.0*
+        *This text &copy; Atlas Docs Contributors, licensed under CC-BY-SA 4.0*
     === "MSDL website"
         Visit the [MSDL website](https://massgrave.dev/msdl), and download your Windows ISO from there.
 
