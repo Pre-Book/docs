@@ -37,7 +37,7 @@ First, open **File Explorer** and go to **This PC**. Then, right click your C: d
 
     ![rename-drive-10](../assets/rename-drive-10.png)
 
-Type in **OS** or **Windows** to relabel your C: drive. This will be important later on.
+Type in **OS** or **Windows** to relabel your C: drive and press ++enter++. This will be important later on.
 
 ## :material-download: Getting our preset
 
