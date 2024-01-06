@@ -39,7 +39,7 @@ First, open **File Explorer** and go to **This PC**. Then, right click your C: d
 
 Type in **OS** or **Windows** to relabel your C: drive and press ++enter++. This will be important later on.
 
-## :material-download: Getting our preset
+### :material-download: Getting our preset
 
 You can download the latest preset release at the links below:
 
@@ -66,6 +66,16 @@ Extract this ZIP file into a new folder called **`PreBook`** somewhere (like you
 
 ![prebook-desktop](../assets/prebook-desktop.png)
 
+### :material-ethernet: Network Drivers
+
+Windows may not include your network drivers by default, so if you can, save them to your **`PreBook`** folder, or have another device that you can transfer the drivers from.
+
+You can get your network drivers by searching for your device or motherboard's official driver page, or by finding a driver page for your network card or dongle. 
+
+You can find your network card via [Device Manager](#network-drivers "Right click the Start button or search for it."):
+
+![device-manager-network](../assets/device-manager-network.png)
+
 ## :material-disc: Getting an ISO
 
 PreBook is **BYOM**, meaning you need to get your own ISO image of Windows 10 or 11 for your language.
@@ -79,7 +89,7 @@ PreBook is **BYOM**, meaning you need to get your own ISO image of Windows 10 or
 
     This was fixed for the AtlasOS docs and MSDL ([:material-github:Atlas docs PR](https://github.com/uBlockOrigin/uAssets/pull/20642)). 
     
-    If you have such tools, this downloader will use a proxy. However, to avoid strain on said proxy, we recommend disabling your adblocker on this page temporarily (re-enable it once the download is done) (the only tracker on this page is Cloudflare Analytics).
+    If you have such tools, this downloader will use a proxy. However, to avoid strain on said proxy, we recommend disabling your adblocker on this page temporarily (re-enable it once the download is done) (the only tracker on this page is [Cloudflare Web Analytics](https://www.cloudflare.com/web-analytics/)).
 
 ??? danger "Bypassing Windows 11 Requrements"
     It's not recommended to bypass Windows 11's requirements as anticheats will still check if you meet them regardless. 
@@ -210,13 +220,13 @@ This will affect what additional tweaks need to be done.
 
     [:octicons-arrow-right-24: Choose this playbook](./playbooks/atlas.md)
 
--   :revi-revi:{ .lg .middle } [__ReviOS__](https://revi.cc)
+-   :revi-revi:{ .lg .middle } [__ReviOS__ [WIP]](https://revi.cc)
 
     ---
 
     Windows as it should be: private, preformant and secure (strips less).
 
-    [:octicons-arrow-right-24: Choose this playbook](./playbooks/revi.md)
+    [~~Choose this playbook~~](./playbooks/revi.md)
 
 -   :material-microsoft-windows:{ .lg .middle .windows } __Stock__
 
