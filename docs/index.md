@@ -20,7 +20,9 @@ glightbox: false
 [![License](https://img.shields.io/github/license/pre-book/prebook?style=flat-square&cacheSeconds=86400)](https://github.com/pre-book/prebook/blob/main/LICENSE)
 [![Docs License](https://img.shields.io/github/license/pre-book/docs?style=flat-square&label=license%20(docs)&cacheSeconds=86400)](https://github.com/Pre-Book/docs/blob/main/LICENSE)
 [![GitHub Repo stars](https://img.shields.io/github/stars/pre-book/prebook?style=flat-square&cacheSeconds=86400)](https://github.com/pre-book/prebook)
-[![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/t/pre-book/prebook?style=flat-square&cacheSeconds=86400)](https://github.com/Pre-Book/PreBook/commits/main/)
+[![GitHub commit activity (main)](https://img.shields.io/github/commit-activity/t/pre-book/prebook?style=flat-square&cacheSeconds=86400)](https://github.com/Pre-Book/PreBook/commits/main/)
+[![GitHub commit activity (docs)](https://img.shields.io/github/commit-activity/t/pre-book/docs?style=flat-square&label=commits%20(docs)&cacheSeconds=86400)](https://github.com/Pre-Book/docs/commits/main/)
+
 
 
 </div>
