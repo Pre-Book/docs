@@ -33,6 +33,14 @@ glightbox: false
 
 ## Links
 
+<div align=center markdown>
+[:material-download: Download](https://github.com/Pre-Book/PreBook/releases/latest){ .md-button }
+[:fontawesome-brands-discord: Chat](https://discord.gg/Qf3PJKhAFg){ .md-button }
+[:material-github: Source](https://github.com/pre-book/prebook){ .md-button }
+</div>
+
+## Pages
+
 <div class="grid cards" markdown>
 
 -   :material-download:{ .lg .middle } __Install PreBook__
