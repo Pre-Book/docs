@@ -81,10 +81,10 @@ nav:
       - Customization: customization/README.md
       - Components:
           - Included Apps: customization/apps.md
+          - Languages: customization/languages.md
+          - Editions: customization/editions.md
       - Settings:
-        - Language: customization/language.md
-        - Editions: customization/editions.md
-        - Windows Settings: customization/windows.md    
+        - Windows Settings: customization/settings.md    
 
 
 repo_url: https://github.com/pre-book/docs

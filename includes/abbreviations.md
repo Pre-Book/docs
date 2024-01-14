@@ -26,3 +26,4 @@
 *[Preset]: XML file that contains a premade configuration for NTLite.
 *[VM]: Virtual Machine
 *[Secure Boot]: UEFI boot setting, enabled by default, that prevents your computer from booting unsigned EFI files.
+*[IME]: Input Method Editor

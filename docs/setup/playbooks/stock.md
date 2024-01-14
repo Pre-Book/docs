@@ -68,6 +68,8 @@ The Registry panel should look something like the picture below:
 !!! info "Want to change something?"
     Consult the [:material-palette: Customization](../../customization/README.md) section and change anything that you wish to change.
 
+    **If you speak Japanese, Korean or Chinese Traditional, consult [this section](../../customization/languages.md).**
+
 ## :material-account-hard-hat: Building our ISO
 
 Head on over to the `Apply` tab and look at the options.
@@ -120,6 +122,7 @@ This is the ISO we're going to flash to our USB, keep it safe.
 Plug in your USB, and pick your flashing software of choice below:
 
 === "Rufus (recommended)"
+    !!! win "This app only works on Windows."
     Download Rufus from [rufus.ie](https://rufus.ie). Get the normal x64 version, or the ARM64 version if you're currently using ARM64 Windows.
 
     ![rufus-site](../../assets/rufus-site.png)
