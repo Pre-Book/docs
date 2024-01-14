@@ -87,7 +87,7 @@ description: All features that are removed in PreBook by default.
 
 ### :octicons-versions-16: Editions
 
-- Only [:material-microsoft-windows: Windows 10 Pro](https://www.microsoft.com/en-ca/windowsforbusiness/windows-10-pro) by default
+- Only [:material-microsoft-windows: Windows 10 Pro](https://www.microsoft.com/en-us/windowsforbusiness/windows-10-pro) by default
 
 ## :material-microsoft: Windows 11
 
@@ -173,4 +173,4 @@ description: All features that are removed in PreBook by default.
 
 ### :octicons-versions-16: Editions
 
-- Only [:material-microsoft: Windows 11 Pro](https://www.microsoft.com/en-ca/windows/business/windows-11-pro) by default
+- Only [:material-microsoft: Windows 11 Pro](https://www.microsoft.com/en-us/windows/business/windows-11-pro) by default
