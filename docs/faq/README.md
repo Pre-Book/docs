@@ -25,7 +25,7 @@ description: FAQ to answer common questions.
     You can download the latest builds from [GitHub Releases](https://github.com/pre-book/prebook/releases/latest).
 ??? question "Who made this?"
 
-    [Asterisk](https://asterisk.shinken.studio "Asterisk's website") and [conaN](https://discord.com/users/779674532481990656 "conaN's Discord Profile").
+    [Asterisk](https://asterisk.lol "Asterisk's website") and [conaN](https://discord.com/users/779674532481990656 "conaN's Discord Profile").
 
 ## :material-book-outline: Origins
 
