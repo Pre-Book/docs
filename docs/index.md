@@ -27,10 +27,6 @@ glightbox: false
 
 ----------------------------------------------------------------
 
-!!! warning "These docs are unfinished!"
-
-    Proceed at your own risk.
-
 ## Links
 
 <div align=center markdown>
