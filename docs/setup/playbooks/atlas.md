@@ -14,7 +14,12 @@ description: Set up PreBook with AtlasOS.
 
 Head on over to the AtlasOS [download page](https://atlasos.net) and get the two files there.
 
+
+
 [![atlas-dl](../../assets/atlas-dl.png)](https://atlasos.net)
+
+??? note "Alternate AME Wizard download link"
+    [git.ameliorated.info/Styris/trusted-uninstaller-cli/releases/latest](https://git.ameliorated.info/Styris/trusted-uninstaller-cli/releases/latest) (Click `AME Wizard Beta.exe`)
 
 Extract the AtlasOS ZIP file to the same folder as the preset. Do the same thing for the AME wizard ZIP file.
 
