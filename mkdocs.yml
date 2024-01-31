@@ -47,7 +47,7 @@ theme:
       primary: black
       accent: indigo
 extra:
-  generator: false
+  # generator: false
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/pre-book
