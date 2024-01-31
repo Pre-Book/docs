@@ -93,3 +93,5 @@ hide:
 
 [![Contributors](https://contrib.rocks/image?repo=pre-book/prebook)](https://github.com/pre-book/prebook/graphs/contributors)
 
+--------
+###### Built with [:simple-materialformkdocs: Material for MkDocs](https://squidfunk.github.io/mkdocs-material).
