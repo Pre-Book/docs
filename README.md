@@ -1,4 +1,4 @@
-# Documentations For PreBook
+# PreBook Documentation
 
 These docs require [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) (Free/Normal Version).
 
