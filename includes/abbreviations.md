@@ -1,3 +1,9 @@
+-------
+<span class="small">Built with [:simple-materialformkdocs: Material for MkDocs](https://squidfunk.github.io/mkdocs-material).</span>
+
+
+
+
 *[AME Wizard]: A tool that is used to strip components and apply tweaks live on a Windows install, configured through a Playbook
 *[BIOS]: Basic Input/Output System
 *[CPU]: Central Processing Unit

@@ -22,3 +22,7 @@
     -webkit-mask-image: var(--md-admonition-icon--win);
     mask-image: var(--md-admonition-icon--win);
 }
+
+span.small {
+    font-size: smaller;
+}

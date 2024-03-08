@@ -3,8 +3,8 @@ icon: material/home
 description: PreBook is an NTLite preset to create a lightweight base ISO for any modification.
 title: Home
 glightbox: false
-hide:
-  - toc
+# hide:
+#  - toc
 ---
 
 <div align="center">
@@ -92,6 +92,3 @@ hide:
 
 
 [![Contributors](https://contrib.rocks/image?repo=pre-book/prebook)](https://github.com/pre-book/prebook/graphs/contributors)
-
---------
-###### Built with [:simple-materialformkdocs: Material for MkDocs](https://squidfunk.github.io/mkdocs-material).
