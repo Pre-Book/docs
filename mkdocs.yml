@@ -89,6 +89,8 @@ repo_url: https://github.com/pre-book/docs
 repo_name: "Pre-Book/docs"
 edit_uri: edit/main/docs/
 site_url: https://prebook.asterisk.lol
+site_author: Asterisk
+site_description: "An NTLite preset to create a base ISO for any modification"
 
 watch: 
   - includes
