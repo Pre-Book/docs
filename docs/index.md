@@ -31,6 +31,9 @@ glightbox: false
 
 ----------------------------------------------------------------
 
+!!! warning "PreBook has been archived"
+    Since AME supports ISO injection now, PreBook is completely useless.
+
 ## Links
 
 <div align=center markdown>
